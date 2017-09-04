@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'fg-medium';
+    src: url('/assets/font/FoundersGrotesk-Medium.otf');
+}
+@font-face {
+    font-family: 'fg-regular';
+    src: url('/assets/font/FoundersGrotesk-Regular.otf');
+}
+@font-face {
+    font-family: 'l-bold';
+    src: url('/assets/font/Lyon Bold.ttf');
+}
+@font-face {
+    font-family: 'fg-regular';
+    src: url('/assets/font/FoundersGrotesk-Regular.otf');
+}
+a, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  font-family: 'fg-regular';
+}
+.brown{
+  color: #896C4C!important;
+}
+.background {
+  position: fixed;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  background-color: rgb(247, 246, 243);
+  margin: 40px;
+}
+
+.title {
+  position: absolute;
+  left: 70px;
+  top: 80px;
+  z-index: 100
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.footer {
+  position: absolute;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+  bottom: 50px;
+  left: 70px;
+}
+
+.left_footer {
+  position: absolute;
+  float: left;
+  color: #A7A296;
+  font-size: 14px;
+  /*top: 20%;*/
+  bottom: 0px
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-left: 30px;
+  top: 22px;
+  transform: translate(0,-50%);
+}
+
+.nav {
+  position: fixed;
+  width: 80px;
+  height: 480px;
+  top: 50%;
+  right: 0px;
+  transform: translate(0, -50%);
+  z-index: 100;
+}
+.en_cn {
+  position: relative;
+  background-color: rgb(220, 216, 206);
+  width: 39px;
+  height: 39px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  line-height: 40px;
+  color: #fff;
+}
+
+.border_left {
+  border-left: 1px solid white;
+  cursor: pointer;
+}
+
+.border_right {
+  border-right: 1px solid white;
+  cursor: pointer;
+}
+
+.blank {
+  width: 80px;
+  height: 300px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+
+.contact_us {
+  width: 80px;
+  height: 132px;
+  position: relative;
+  background-color: rgb(137, 108, 76);
+  float: left;
+}
+
+.navbar {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(90deg);
+  line-height: 80px;
+}
+
+.nav_font {
+  font-size: 14px;
+  float: left;
+  position: relative;
+  margin: 0 15px;
+  cursor: pointer;
+  width:calc(33% - 30px);
+  text-align: center;
+}
+
+.nav_font2 {
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    width: 83px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(90deg);
+}
+
+.hvr-underline-from-left-white,
+.hvr-underline-from-left{
+  /*display:inline-block;*/
+  vertical-align:middle;
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px transparent;
+  position:relative;
+  overflow:hidden
+}
+.hvr-underline-from-left-white:before,
+.hvr-underline-from-left:before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:0;
+  right:100%;
+  bottom:-3px;
+  background:rgb(137, 108, 76);
+  height:3px;
+  -webkit-transition-property:right;
+  transition-property:right;
+  -webkit-transition-duration:.3s;transition-duration:.3s;
+  -webkit-transition-timing-function:ease-out;
+  transition-timing-function:ease-out
+}
+.hvr-underline-from-left-white:active:before,
+.hvr-underline-from-left-white:focus:before,
+.hvr-underline-from-left-white:hover:before,
+.hvr-underline-from-left:active:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:hover:before{
+  right:0
+}
+.hvr-underline-from-left-white:before{
+  background:#fff;
+  /*bottom: px;*/
+}
+.selected{
+  color:#896C4C!important;
+  font-weight: bold;
+  border-bottom: 3px solid #896C4C;
+}
+.body-content{
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  margin: 40px;
+  position: relative;
+}
+.container3{
+  position: absolute;
+  left: -175px;
+  top: 50%;
+  transform: translate(0,-50%);
+  z-index: 10;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #DCD8CE;
+}
+.container3 figure{
+  position: absolute;
+  width: 200px;
+  transition: all 0.5s ease;
+  list-style:square;
+}
+.fa-circle{
+  font-size: 8px!important;
+  margin-right: 20px;
+}
+.current-tab{
+  color: #000;
+}

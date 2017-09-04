@@ -1,0 +1,126 @@
+.container {
+  width: 380px;
+  height: 200px;
+  position: absolute;
+  /*border: 1px solid #CCC;*/
+  -webkit-perspective: 75px;
+     -moz-perspective: 75px;
+       -o-perspective: 75px;
+          perspective: 75px;
+  top: 15%;
+  left: 260px;
+}
+
+.container2 {
+  width: calc(100% - 410px);
+  height: 50%;
+  position: absolute;
+  left: 260px;
+  top: 40%;
+  /*border: 1px solid #CCC;*/
+  -webkit-perspective: 320px;
+     -moz-perspective: 320px;
+       -o-perspective: 320px;
+          perspective: 320px;
+}
+
+#carousel, #carousel2  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.ready #carousel,.ready #carousel2 {
+  -webkit-transition: -webkit-transform 0.5s;
+     -moz-transition: -moz-transform 0.5s;
+       -o-transition: -o-transform 0.5s;
+          transition: transform 0.5s;
+}
+
+#carousel.panels-backface-invisible figure,
+#carousel2.panels-backface-invisible figure
+{
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 356px;
+  height: 176px;
+  left: 10px;
+  top: 10px;
+}
+
+#carousel2 figure {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+
+.ready #carousel figure {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+     -moz-transition: opacity 1s, -moz-transform 1s;
+       -o-transition: opacity 1s, -o-transform 1s;
+          transition: opacity 1s, transform 1s;
+}
+
+#options{
+  position: fixed;
+  top: 60%;
+}
+
+.number {
+  display: inline-block;
+  font-family: 'l-bold';
+  color:rgb(220,216,206);
+  font-size: 144px;
+}
+
+.text {
+  font-weight: bold;
+  line-height: 33px;
+  color:black;
+  font-size: 24px;
+  display:inline-block;
+  top: 28px;
+}
+
+.detail-left{
+  width:360px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  float: left;
+  text-align: left;
+}
+.detail-right{
+  height: 100%;
+  margin-left: 360px;
+  text-align: center;
+}
+.detail-right h2{
+  font-family: "l-bold";
+  font-size: 64px;
+  color:#A7A296;
+}
+.detail-right p{
+  font-size: 24px;
+  line-height: 33px;
+  color: #896C4C;
+}
+.detail-right span{
+  font-size: 14px;
+  color:#A7A296;
+}

@@ -1,0 +1,34 @@
+html,body{
+	height: 100%;
+	/*overflow: hidden;*/
+}
+a{
+	text-decoration: none;
+}
+a,
+a:visited{
+	color:inherit;
+}
+@font-face {
+    font-family: 'lyon-bold';
+    src: url('/assets/font/Lyon Bold.ttf');
+}
+@font-face {
+    font-family: 'FoundersGrotesk-Regular';
+    src: url('/assets/font/FoundersGrotesk-Regular.otf');
+}
+.lyon-bold{
+	font-family: 'lyon-bold';
+}
+.fg-regular{
+	font-family: 'FoundersGrotesk-Regular';
+}
+.xl-text{
+	font-size: 50px;
+}
+.white{
+	color:#fff;
+}
+.normal-button{
+
+}

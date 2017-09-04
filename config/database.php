@@ -55,7 +55,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'host' => '127.0.0.1',
-            'database' => 's1070820_cheee',
+            'database' => 'goldclip',
             'username' => 'root',//'s1070820_admin',
             'password' => 'root',//'s1070820_Cheee',  
             'charset' => 'utf8',

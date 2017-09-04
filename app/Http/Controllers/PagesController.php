@@ -8,29 +8,9 @@ use App\Http\Requests;
 
 class PagesController extends Controller
 {
-    public function home(){
-     //    $featuredWorks = DB::table('portfolios')
-     //        ->where('featured','=','1')
-     //        ->take(8)
-     //        ->get();
-
-     //    foreach($featuredWorks as $work){
-     //        $media = DB::table('media_portfolio')
-     //                    ->where([
-     //                        ['portfolio_id',$work->id],
-     //                        ['featured','1']
-     //                    ])
-     //                    ->get();
-     //        if(sizeof($media) > 0){
-     //            $media = $media[0]->media_id;
-     //            $mediaSrc = DB::table('media_library')
-     //                        ->where('id','=',$media)
-     //                        ->get()[0]->src;
-     //            $work->image = $mediaSrc;            
-     //        }
-     //    }
-    	// return view('pages.home')->with('featuredWorks',json_encode($featuredWorks));
-        return view('pages.home');
+    public function home(Request $request){
+        $text = $this->getTranslate($request->input("language"));
+        return view('pages.home')->with('text', $text);
     }
 
     public function login(Request $request){
@@ -57,8 +37,9 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
-    public function about(){
-        return view('pages.about');
+    public function about(Request $request){
+        $text = $this->getTranslate($request->input("language"));
+        return view('pages.about')->with('text', $text)->with('action', "about");
     }
 
     public function service(){
@@ -92,5 +73,22 @@ class PagesController extends Controller
     			return view('partial.portfolioHome');
     			break;
     	}
+    }
+
+    private function getTranslate($language){
+        $lang_key = $language;
+        if ($lang_key !== "ch" && $lang_key !== "en") {
+            $lang_key = "en";
+            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4);   
+            if (preg_match("/zh-c/i", $lang) || preg_match("/zh/i", $lang)) {
+                $lang_key = 'ch';  
+            }
+        }
+        $translate = DB::table('translate')->get(array("tkey",$lang_key));
+        $text = array();
+        foreach ($translate as $value) {
+            $text[$value->tkey] = $value->$lang_key;
+        }
+        return $text;
     }
 }
