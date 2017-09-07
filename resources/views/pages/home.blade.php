@@ -21,7 +21,7 @@
 	<link href="/assets/css/goldclip.css" rel="stylesheet">
 	<link href="/assets/css/home.css" rel="stylesheet">
 	<link href="/assets/css/animate.css" rel="stylesheet">
-
+	<link href="/assets/css/menu-m.css" rel="stylesheet">
 </head>
 <body>
 
@@ -44,6 +44,38 @@
 	      	<div class="nav_font2"><a href="/contact?language=<?=$text['language']?>" class="hvr-underline-from-left-white"><?=$text['contact_us']?></a></div>
 	    </div>
   	</div>
+
+  	<div id="menu-m">
+  		<div class="dot"></div>
+  		<div id="top-d" class="dot"></div>
+  		<div class="dot"></div>
+  		<div id="left-d" class="dot"></div>
+  		<div class="dot"></div>
+  		<div id="right-d" class="dot"></div>
+  		<div class="dot"></div>
+  		<div id="bottom-d" class="dot"></div>
+  		<div class="dot"></div>
+  		<div class="menu-t menu-text">MENU</div>
+  		<div class="close-t menu-text">CLOSE</div>
+  	</div>
+	<div class="menu-m-content">
+		<div class="menu-m-center">
+			<div class="menu-m-cn-en">
+			<?php 
+				if ($text['language'] == 'ch') {
+					echo '<a href="?language=en"><span class="">EN</span></a>|<span class="">中</span>';
+				} else {
+					echo '<span class="">EN</span>|<a href="?language=ch"><span class="">中</span></a>';
+				}
+			?>
+			</div>
+			<a href="/product?language=<?=$text['language']?>"><h2>Product</h2></a>
+			<a href="/process?language=<?=$text['language']?>"><h2>Process</h2></a>
+			<a href="/about?language=<?=$text['language']?>"><h2>About Us</h2></a>
+			<a href="/contact?language=<?=$text['language']?>"><h2>Contact Us</h2></a>
+		</div>
+	</div>
+
 
 	<div class="first-screen">
 		<img class="logo" src="/assets/img/goldclip_logo.png">
@@ -95,7 +127,7 @@
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">从此爱上床</h2>
 					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip一款土生土长于澳大利亚维多利亚州的顶级羊毛被，他选择澳大利亚最好的羊毛和材料，澳洲制造认证，国际羊毛局纯羊毛认证，全球无害物质认证，确保每件产品都按照最高的标准进行打造。</p>
-					<button class="home-button wow flipInY" data-wow-delay="0.5s">更多信息</button>
+					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow flipInY" data-wow-delay="0.5s">更多信息</button></a>
 				</div>
 			</div>
 			<div class="news">
@@ -103,7 +135,7 @@
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">温暖“被”至丨御寒大作战</h2>
 					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip顶级羊毛被现已上市，它将成为你生活起居，过节送礼的首选佳品，你还在等待什么，现在就联系我们吧。</p>
-					<button class="home-button wow flipInY" data-wow-delay="0.5s">联系我们</button>
+					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow flipInY" data-wow-delay="0.5s">联系我们</button></a>
 				</div>
 			</div>
 		</div>
@@ -113,25 +145,39 @@
 			<img class="wow pulse" src="/assets/img/goldclip_logo.png">
 		</div>
 		<div class="home-footer-links fg-regular wow fadeIn">
-			<a href="/">ABOUT US</a> |
-			<a href="/">PRODUCT</a> |
-			<a href="/">PROCESS</a> |
-			<a href="/">PRIVACY POLICY</a>
+			<a href="/about?language=<?=$text['language']?>">ABOUT US</a> |
+			<a href="/product?language=<?=$text['language']?>">PRODUCT</a> |
+			<a href="/process?language=<?=$text['language']?>">PROCESS</a> |
+			<a href="/privacy">PRIVACY POLICY</a>
 		</div>
 		<div class="home-footer-cheee fg-regular wow fadeIn" data-wow-delay="0.3s">
 			© Gold Clip 2017 - All Rights Reserved<br>Made with ❤ by Gold Clip
 		</div>
 		<div class="home-footer-icons">
-			<a href="/"><img class="wow fadeIn" data-wow-delay="0.5s" src="assets/img/address.png"></a>
-			<a href="/"><img class="wow fadeIn" data-wow-delay="0.7s" src="assets/img/tel.png"></a>
-			<a href="/"><img class="wow fadeIn" data-wow-delay="0.9s" src="assets/img/email.png"></a>
-			<a href="/"><img class="wow fadeIn" data-wow-delay="1.1s" src="assets/img/wechat.png"></a>
+			<a href="https://www.google.com.au/maps/place/Alcaston+House,+2+Collins+St,+Melbourne+VIC+3004/" target="_blank"><img class="wow fadeIn" data-wow-delay="0.5s" src="assets/img/address.png"></a>
+			<a href="tel:0451919628"><img class="wow fadeIn" data-wow-delay="0.7s" src="assets/img/tel.png"></a>
+			<a href="mailto:admin@goldclip.com.au"><img class="wow fadeIn" data-wow-delay="0.9s" src="assets/img/email.png"></a>
+			<a href="javascript:$('.qrcode').fadeIn();"><img class="wow fadeIn" data-wow-delay="1.1s" src="assets/img/wechat.png"></a>
 		</div>
 	</div>
+	<div class="qrcode" onclick="$('.qrcode').fadeOut();">
+		<img src="/assets/img/qrcode.png">
+	</div>
 </body>
+<script src="/assets/js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/assets/js/home.js"></script>
 <script type="text/javascript" src="/assets/js/wow.min.js"></script>
 <script type="text/javascript">
 	new WOW().init();
+
+	$("#menu-m").click(function(){
+		$("#top-d").toggleClass('top-open');
+		$("#bottom-d").toggleClass('bottom-open');
+		$("#left-d").toggleClass('left-open');
+		$("#right-d").toggleClass('right-open');
+		$(".menu-t").toggleClass('menu-t-open');
+		$(".close-t").toggleClass('close-t-open');
+		$(".menu-m-content").toggleClass('menu-m-content-open');
+	});
 </script>
 </html>

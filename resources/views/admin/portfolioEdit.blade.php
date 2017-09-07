@@ -59,23 +59,38 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="from-group">
-                                <label>Portfolio Index</label>
+                                <label>Product Id</label>
                                 <input type="text" ng-model="portfolio.searchIndex" class="form-control">
                             </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                             <div class="from-group">
-                                <label>Portfolio Type</label>
-                                <select ng-model="portfolio.category" class="form-control">
-                                    <option value="Branding">Branding</option>
-                                    <option value="Design">Design</option>
-                                    <option value="Digital">Digital</option>
-                                    <option value="Interior">Interior</option>
-                                </select>
+                                <label>Product Price</label>
+                                <input type="text" ng-model="portfolio.content" class="form-control">
                             </div>
                         </div>
-
-                        <div class="col-sm-2">
+                    </div>
+                     <div class="row">
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Portfolio Title Chinese</label>
+                                <input type="text" ng-model="portfolio.title_cn" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Product Id Chinese</label>
+                                <input type="text" ng-model="portfolio.id_cn" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Product Price Chinese</label>
+                                <input type="text" ng-model="portfolio.content_cn" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                       <!--  <div class="col-sm-2">
                             <div class="from-group">
                                 <label>Project Date</label>
                                 <div id="project-date" class="input-group date" data-auto-close="true" data-date="@{{ortfolio.date}}" data-date-format="dd-mm-yyyy" data-date-autoclose="true">
@@ -111,7 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <!-- /.portlet-content -->
@@ -195,8 +210,8 @@
             $scope.portfolio = {!! $portfolio !!}[0];
 
             $scope.update = function(){
-                $scope.portfolio['medias'] = $scope.tickMediaAttr;
-                $scope.portfolio['content'] = $('div#cheee-admin-editor').froalaEditor('html.get', true);
+                // $scope.portfolio['medias'] = $scope.tickMediaAttr;
+                // $scope.portfolio['content'] = $('div#cheee-admin-editor').froalaEditor('html.get', true);
                 var data = JSON.stringify($scope.portfolio);
                 $http({
                     method: 'POST',

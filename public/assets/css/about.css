@@ -8,74 +8,74 @@
        -o-perspective: 75px;
           perspective: 75px;
   top: 15%;
-  left: 260px;
+  left: 22%;
 }
 
 .container2 {
   width: calc(100% - 410px);
-  height: 50%;
+  height: 57%;
   position: absolute;
-  left: 260px;
-  top: 40%;
+  left: 22%;
+  top: 35%;
   /*border: 1px solid #CCC;*/
-  -webkit-perspective: 320px;
+ /* -webkit-perspective: 320px;
      -moz-perspective: 320px;
        -o-perspective: 320px;
-          perspective: 320px;
+          perspective: 320px;*/
 }
 
 #carousel, #carousel2  {
   width: 100%;
   height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
+  /*position: absolute;*/
+/*  -webkit-transform-style: preserve-3d;
      -moz-transform-style: preserve-3d;
        -o-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+          transform-style: preserve-3d;*/
 }
 
-.ready #carousel,.ready #carousel2 {
+/*.ready #carousel,.ready #carousel2 {
   -webkit-transition: -webkit-transform 0.5s;
      -moz-transition: -moz-transform 0.5s;
        -o-transition: -o-transform 0.5s;
           transition: transform 0.5s;
-}
+}*/
 
-#carousel.panels-backface-invisible figure,
+/*#carousel.panels-backface-invisible figure,
 #carousel2.panels-backface-invisible figure
 {
   -webkit-backface-visibility: hidden;
      -moz-backface-visibility: hidden;
        -o-backface-visibility: hidden;
           backface-visibility: hidden;
-}
+}*/
 
-#carousel figure {
+/*#carousel figure {
   display: block;
   position: absolute;
   width: 356px;
   height: 176px;
   left: 10px;
   top: 10px;
-}
+}*/
 
-#carousel2 figure {
+/*#carousel2 figure {
   width: 100%;
   height: 100%;
   display: block;
   position: absolute;
   left: 10px;
   top: 10px;
-}
+}*/
 
 
-.ready #carousel figure {
+/*.ready #carousel figure {
   -webkit-transition: opacity 1s, -webkit-transform 1s;
      -moz-transition: opacity 1s, -moz-transform 1s;
        -o-transition: opacity 1s, -o-transform 1s;
           transition: opacity 1s, transform 1s;
 }
-
+*/
 #options{
   position: fixed;
   top: 60%;
@@ -107,7 +107,7 @@
 }
 .detail-right{
   height: 100%;
-  margin-left: 360px;
+  margin-left: 400px;
   text-align: center;
 }
 .detail-right h2{
@@ -115,7 +115,7 @@
   font-size: 64px;
   color:#A7A296;
 }
-.detail-right p{
+.detail-right-sologan{
   font-size: 24px;
   line-height: 33px;
   color: #896C4C;
@@ -123,4 +123,66 @@
 .detail-right span{
   font-size: 14px;
   color:#A7A296;
+}
+@keyframes upmove{
+  0%   {left:120%;}
+  50%  {left:-120%;}
+  100% {left:120%;}
+}
+@keyframes downmove{
+  0%   {right:100%;}
+  50%  {right:-120%;}
+  100% {right:100%;}
+}
+.detail-right img{
+  width: 100%;
+  max-width: 590px;
+  margin-bottom: 10px;
+}
+.detail-right p{
+  margin:0 auto;
+  max-width: 590px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.t5-title{
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+}
+.t5-des{
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+.t5-slash{
+  padding: 10px;
+}
+.t5-slash img{
+  position: relative;
+  bottom:5px;
+}
+.t5-table{
+  width: 360px;
+  float: left;
+}
+.t5-table tr{
+  height: 80px;
+}
+.about-5-right{
+  /*display: flex;*/
+  margin-left: 400px;
+  /*max-width: 506px;*/
+  text-align: center;
+}
+.about-5-right img{
+  width: 100%;
+  max-width: 506px;
+}
+.ppt{
+  overflow: auto;
+  height: 450px!important;
 }

@@ -1,0 +1,507 @@
+.container {
+  width: 380px;
+  height: 200px;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+
+.container2 {
+  width: calc(50% - 120px);
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+#carousel, #carousel2  {
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+}
+
+#options{
+  position: fixed;
+  top: 60%;
+}
+
+.number {
+  display: inline-block;
+  font-family: 'l-bold';
+  color:rgb(220,216,206);
+  font-size: 144px;
+}
+
+.text {
+  font-weight: bold;
+  line-height: 33px;
+  color:black;
+  font-size: 24px;
+  display:inline-block;
+  top: 28px;
+}
+@keyframes upmove{
+  0%   {left:120%;}
+  50%  {left:-120%;}
+  100% {left:120%;}
+}
+@keyframes downmove{
+  0%   {right:100%;}
+  50%  {right:-120%;}
+  100% {right:100%;}
+}
+
+.t5-title{
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100px;
+}
+.t5-des{
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+.t5-slash{
+  padding: 10px;
+}
+.t5-slash img{
+  position: relative;
+  bottom:5px;
+}
+.t5-table{
+  width: 420px;
+  float: left;
+}
+.t5-table tr{
+  height: 80px;
+}
+.about-5-right{
+  margin-left: 460px;
+  text-align: center;
+}
+.about-5-right img{
+  width: 100%;
+  max-width: 506px;
+}
+.ppt{
+  overflow: auto;
+  height:700px!important;
+  position: relative;
+}
+.product-right{/*
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  /*margin:0 auto;*/
+  margin-left: 50px;
+  max-width: 360px;
+  text-align: center;
+  overflow: hidden;
+}
+.product-right h2{
+  font-family: "l-bold";
+  font-size: 64px;
+  color:#A7A296;
+}
+.detail-right-sologan{
+  font-size: 24px;
+  line-height: 33px;
+  color: #896C4C;
+}
+.product-right span{
+  font-size: 14px;
+  color:#A7A296;
+}
+.product-right p{
+  margin:20px auto;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.scroll{
+  overflow: auto;
+}
+.product-item{
+  margin:30px 0;
+  position: relative;
+  width: 100%;
+  /*height: 60px;*/
+  border-top: 1px solid #DCD8CE;
+  border-bottom: 1px solid #DCD8CE;
+}
+.item-name{
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  height: 40px;
+  top:10px;
+  line-height: 40px;
+}
+.item-name img{
+  height: 100%;
+}
+.item-expand{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background:url("/assets/img/expand.png");
+}
+.item-des{
+  margin-top: 60px;
+  transition: height 0.5s ease;
+  height: 0px;
+  overflow: hidden;
+}
+.special-padding{
+  padding: 40px 0;
+}
+.special-margin{
+  margin-top:100px!important;
+}
+.special-margin-2{
+  margin-top:200px;
+}
+.item-name span{
+  position: absolute;
+  top:0;
+  left: 70px;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  width: 200px;
+  text-align: left;
+}
+.special-line-height{
+  line-height: 40px!important;
+}
+.main {
+  width: 100%;
+}
+
+.game-list {
+  list-style: none;
+  position: absolute;  
+  z-index: 20;
+  left:23%;
+  top:40%;
+}
+
+.game-list li {
+  position: relative;
+  width: 298px;
+  margin: 0 auto;
+  z-index: 1;
+  -webkit-perspective: 1800px;
+  -moz-perspective: 1800px;
+  perspective: 1800px;
+ 
+}
+
+.game-list li .game-box {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .5s;
+  -moz-transition: -moz-transform .5s;
+  transition: transform .5s;
+}
+
+/*.game-list li .game-box.game-boxdefault:hover {
+  -webkit-transform: rotate3d(0,1,0,120deg);
+  -moz-transform: rotate3d(0,1,0,120deg);
+  transform: rotate3d(0,1,0,120deg);
+}*/
+
+.game-list li .game-box > div,
+.game-list li .game-front > div {
+  display: block;
+  position: absolute;
+  /*box-shadow: 10px 10px 30px rgba(0,0,0,0.3);*/
+}
+
+.game-list li .game-front {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform .5s;
+  -moz-transition: -moz-transform .5s;
+  transition: transform .5s;
+  -webkit-transform: translate3d(0,0,90px);
+  -moz-transform: translate3d(0,0,90px);
+  transform: translate3d(0,0,90px);
+  z-index: 10;
+}
+
+.game-list li .game-front,
+.game-list li .game-front > div ,
+.game-list li .game-back > div,
+.game-list li .game-back {
+  width: 320px;
+  height: 320px;
+  border-radius: 3px 0 0 7px;
+}
+
+.game-list li .game-side,
+.game-list li .game-right {
+  width: 190px;
+  left: -95px;
+  border-radius: 3px 7px 0 7px;
+
+}
+
+.game-list li .game-right {
+  height: 320px;
+  background-image: url('/assets/img/box_right.png'); 
+  background-size: contain;
+  /*top: 5px;*/
+  -webkit-transform: rotate3d(0,1,0,90deg) translate3d(0,0,320px);
+  -moz-transform: rotate3d(0,1,0,90deg) translate3d(0,0,320px);
+  transform: rotate3d(0,1,0,90deg) translate3d(0,0,320px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.game-list li .game-back {
+  height: 320px;
+  background-image: url('/assets/img/box_back.png'); 
+  background-size: contain;
+  /*top: 5px;*/
+  -webkit-transform: rotate3d(0,1,0,180deg) translate3d(0,0,95px);
+  -moz-transform: rotate3d(0,1,0,180deg) translate3d(0,0,95px);
+  transform: rotate3d(0,1,0,180deg) translate3d(0,0,95px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.game-list li .game-side {
+  background-image: url('/assets/img/box_left.png'); 
+  background-size: contain; 
+  background-position:0px 0px;
+  height: 320px;
+  -webkit-transform: rotate3d(0,1,0,-90deg);
+  -moz-transform: rotate3d(0,1,0,-90deg);
+  transform: rotate3d(0,1,0,-90deg);
+}
+/* Individual box styles & imames */
+
+/* box 1 */
+.box-1 .game-front > div,
+.box-1 .game-side,
+.box-1 .game-front:after {
+    /*background-color: #DCD8CE;*/
+}
+
+.box-1 .game-cover {
+  background-image: url('/assets/img/box_front.png'); 
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  overflow:hidden;
+}
+
+.box-1 .game-cover h2 {
+  display:none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 30px;
+  /* background: #90cf07; */
+  /*color: #fff;*/
+}
+
+
+/* box 2 */
+
+.box-2 .game-front > div,
+.box-2 .game-back,
+.box-2 .game-side,
+.box-2 .game-front:after {
+    background-color: #1C62D6;
+}
+
+/*.box-2 .game-cover {
+  background-image: url(../images/front2.png);  
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  overflow:hidden;
+
+}
+
+.game-list li .box-2 .game-side {
+  background-image: url(../images/side2.png); 
+}*/
+
+.specular{
+  position: absolute;
+  top: -50px;
+  left: -17px;
+  z-index: 10000;
+  width:796px;
+  height: 714px;
+  overflow:hidden;
+
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+
+
+background: -moz-linear-gradient(270deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+background: -webkit-linear-gradient(200deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+background: linear-gradient(270deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+background-position: 00px 0px;
+background-size: 500px 500px;
+-webkit-background-size:500px 500px;
+-moz-background-size:500px 500px;
+
+-moz-mask: -moz-linear-gradient(top, #fff, transparent 50%); /*This doesn't work in Firefox..needs SVG or something*/
+-webkit-mask: -webkit-linear-gradient(top, #fff, transparent 50%);
+mask: linear-gradient(top, #fff, transparent 50%);
+
+-webkit-transition: left 0.3s linear;
+-moz-transition: left 0.3s linear;
+transition: left 0.3s linear;
+}
+
+/*.game-box:hover .specular {
+   left: -120px;
+}*/
+
+.specular-left {
+  position: absolute;
+  top: 0px;
+  /*left: 20px;*/
+  z-index: 10000;
+  width:41px;
+  height: 320px;
+
+  overflow:hidden;
+
+background: -moz-linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
+background: -webkit-linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
+background: linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
+background-position: 00px 0px;
+background-size: 41px 500px;
+-webkit-background-size:41px 500px;
+-moz-background-size:41px 500px;
+
+-moz-mask: -moz-linear-gradient(left, #fff, transparent 50%); /*This doesn't work in Firefox..needs SVG or something*/
+-webkit-mask: -webkit-linear-gradient(left, #fff, transparent 50%);
+mask: linear-gradient(left, #fff, transparent 50%);
+
+  -webkit-transition: left 0.25s linear;
+  -moz-transition: left 0.25s linear;
+  transition: left 0.25s linear;
+
+}
+/*
+.game-box:hover .specular-left {
+  left: 0px;
+}*/
+
+
+.game-list li .game-cover:after,
+.game-list li .game-back:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    bottom:0px;
+    width: 3px;
+    height:379px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.2);
+}
+.product-select{
+  height: 115px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.product-warm{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product-detail{
+  position: absolute;
+  top:0;
+  left: 70px;
+  width: 458px;
+}
+.p-title{
+  color: #A7A296;
+  text-align: left;
+  font-size: 16px;
+  /* margin-bottom: 10px; */
+  line-height: 30px;
+}
+.p-price{
+  width: 198px;
+  height: 60px;
+  border: 2px solid #E7E4DF;
+  color: #DCD8CE;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.p-price:hover{
+  border-color: #896C4C;
+  color:#896C4C;
+}
+.p-price label{
+  line-height: 22px;
+}
+.p-p-title{
+  font-size: 12px;
+}
+.p-p-price{
+  font-weight: bold;
+  font-size: 14px;
+}
+.p-p-part{
+  font-size: 10px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.product-right-5{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+      width: 528px;
+}
+.btn{
+  line-height: 34px;
+  padding-top: 8px;
+  font-size: 18px;
+  background-color: #000;
+  text-align: center;
+  width: 212px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  background-color: #896C4C;
+
+}

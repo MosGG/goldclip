@@ -39,7 +39,7 @@
     <header id="header">
         <h1 id="site-logo">
             <a href="">
-                <img src="/assets/img/Cheee-logo.png" alt="Site Logo"/>
+                <img src="/assets/img/goldclip_logo.png" alt="Site Logo"/>
             </a>
         </h1>
 
@@ -100,7 +100,7 @@
                     </a>
                 </li>
 
-                <li class="">
+               <!--  <li class="">
                     <a href="/media-library">
                         <i class="fa fa-picture-o"></i>
                         Media Library
@@ -112,7 +112,7 @@
                         <i class="fa fa-file-pdf-o"></i>
                         Style Guide
                     </a>
-                </li>
+                </li> -->
 
                 <li class="">
                     <a href="/admin-portfolio">

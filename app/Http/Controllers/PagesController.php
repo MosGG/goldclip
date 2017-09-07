@@ -42,8 +42,29 @@ class PagesController extends Controller
         return view('pages.about')->with('text', $text)->with('action', "about");
     }
 
-    public function service(){
-        return view('pages.service');
+    public function process(Request $request){
+        $text = $this->getTranslate($request->input("language"));
+        return view('pages.process')->with('text', $text)->with('action', "process");
+    }
+
+    public function product(Request $request){
+        $text = $this->getTranslate($request->input("language"));
+        $product = DB::table('portfolios')->orderBy('id','ASC')->get();
+        $res = array();
+        foreach($product as $p){
+            $temp = array();
+            if ($text['language'] == 'en') {
+                $temp['title'] = $p->title;
+                $temp['price'] = $p->content;
+                $temp['id'] = $p->searchIndex;
+            } else {
+                $temp['title'] = $p->title_cn;
+                $temp['price'] = $p->content_cn;
+                $temp['id'] = $p->id_cn;
+            }
+            $res[] = $temp;
+        }
+        return view('pages.product')->with('text', $text)->with('action', "product")->with('product', $res);
     }
 
     public function portfolioTemplates($index){

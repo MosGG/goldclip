@@ -59,12 +59,19 @@
 
                         <div class="col-sm-4">
                             <div class="from-group">
-                                <label>Portfolio Search Index</label>
+                                <label>Product Id</label>
                                 <input type="text" ng-model="portfolioIndex" class="form-control">
                             </div>
                         </div>
 
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Product Price</label>
+                                <input type="text" ng-model="portfolioPrice" class="form-control">
+                            </div>
+                        </div>
+
+                       <!--  <div class="col-sm-2">
                             <div class="from-group">
                                 <label>Portfolio Type</label>
                                 <select ng-model="portfolioType" class="form-control">
@@ -74,8 +81,8 @@
                                     <option value="Interior">Interior</option>
                                 </select>
                             </div>
-                        </div>
-
+                        </div> -->
+<!-- 
                          <div class="col-sm-2">
                             <div class="from-group">
                                 <label>Project Date</label>
@@ -84,10 +91,30 @@
                                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                 </div>
                             </div>
+                        </div> -->
+                    </div>
+                     <div class="row">
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Portfolio Title Chinese</label>
+                                <input type="text" ng-model="title_cn" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Product Id Chinese</label>
+                                <input type="text" ng-model="id_cn" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="from-group">
+                                <label>Product Price Chinese</label>
+                                <input type="text" ng-model="content_cn" class="form-control">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                  <!--   <div class="row">
                         <div class="col-sm-12">
                             <div class="from-group">
                                 <label>Portfolio Content/Description</label>
@@ -95,8 +122,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row photo-gallery">
+ -->
+                   <!--  <div class="row photo-gallery">
                         <div class="col-sm-12">
                             <div style="padding-bottom: 16px">
                                 <button class="btn btn-secondary" ng-click="showMediaModal()">Insert Photo From Media Library</button>
@@ -114,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- /.portlet-content -->
             </div>
@@ -214,10 +241,10 @@
                     data: {
                         title: $scope.portfolioTitle,
                         index: $scope.portfolioIndex,
-                        category: $scope.portfolioType,
-                        content: $('div#cheee-admin-editor').froalaEditor('html.get', true),
-                        date: $scope.portfolioDate,
-                        medias: JSON.stringify($scope.tickMediaAttr)
+                        title_cn: $scope.title_cn,
+                        content: $scope.portfolioPrice,
+                        content_cn: $scope.content_cn,
+                        id_cn: $scope.id_cn,
                     }
                 }).then(function successCallback(response) {
                     window.location.href = "/admin-portfolio";

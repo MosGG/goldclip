@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Login - CHEEE Admin</title>
+    <title>Login - GOLD CLIP Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="">
@@ -32,7 +32,7 @@
 
         <div id="login">
 
-            <h3>Welcome to CHEEE Admin.</h3>
+            <h3>Welcome to GOLD CLIP Admin.</h3>
 
             <h5>Please sign in to get access.</h5>
 

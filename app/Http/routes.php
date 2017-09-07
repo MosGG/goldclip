@@ -190,11 +190,15 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'PagesController@about'
     ]);
 
-    Route::get('/service', [
-        'as' => 'service',
-        'uses' => 'PagesController@service'
+    Route::get('/process', [
+        'as' => 'process',
+        'uses' => 'PagesController@process'
     ]);
 
+    Route::get('/product', [
+        'as' => 'product',
+        'uses' => 'PagesController@product'
+    ]);
     /*
     *  Portfolio Pages (urls for all the portfolio parts)
     */

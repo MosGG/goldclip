@@ -18,11 +18,11 @@
                                >New
                             Portfolio
                         </a>
-
+<!-- 
                         <a type="button" target="_blank" class="btn btn-info admin-add-btn" href="/portfolio-sort"
                                >Overall
                             Sorting
-                        </a>
+                        </a> -->
 
                         <div class="portlet-header">
 
@@ -47,16 +47,16 @@
                                         >
                                     <thead>
                                     <tr>
-                                        <th data-filterable="true" data-sortable="true" data-direction="desc">Featured
-                                        </th>
-                                         <th data-filterable="true" data-sortable="true" data-direction="desc">Client
-                                        </th>
+                                        <!-- <th data-filterable="true" data-sortable="true" data-direction="desc">Featured
+                                        </th> -->
+                                         <!-- <th data-filterable="true" data-sortable="true" data-direction="desc">Client
+                                        </th> -->
                                         <th data-filterable="true" data-sortable="true" data-direction="desc">ID
                                         </th>
                                         <th data-filterable="true" data-sortable="true" data-direction="desc">Portfolio Title
                                         </th>
-                                        <th data-filterable="true" data-sortable="true" data-direction="desc">Portfolio Title
-                                        </th>
+                                    <!--     <th data-filterable="true" data-sortable="true" data-direction="desc">Portfolio Title
+                                        </th> -->
                                         <th data-direction="asc" data-filterable="true" data-sortable="true">Publisher
                                         </th>
                                         <th>Action</th>
@@ -64,23 +64,23 @@
                                     </thead>
                                     <tbody>
                                         <tr ng-repeat="x in portfolios">
-                                            <td><button type="button" class="featureBtn" ng-class="{ featureBtnActive:x.featured == 1 }" ng-click="changeFeatureClass(x)">
+              <!--                               <td><button type="button" class="featureBtn" ng-class="{ featureBtnActive:x.featured == 1 }" ng-click="changeFeatureClass(x)">
                                                 <i class="fa fa-star"></i>
-                                            </button></td>
-                                             <td><button type="button" class="featureBtn" ng-class="{ featureBtnActive:x.client == 1 }" ng-click="changeClientClass(x)">
+                                            </button></td> -->
+<!--                                              <td><button type="button" class="featureBtn" ng-class="{ featureBtnActive:x.client == 1 }" ng-click="changeClientClass(x)">
                                                 <i class="fa fa-star"></i>
-                                            </button></td>
+                                            </button></td> -->
                                             <td ng-bind="x.id"></td>
-                                            <td ng-bind="x.title"></td>
-                                            <td ng-bind="x.category"></td>
+                                            <td ng-bind="x.title"></td><!-- 
+                                            <td ng-bind="x.category"></td> -->
                                             <td ng-bind="x.publisher"></td>
                                             <td>
                                                 <a class="btn btn-info" href="/portfolio-edit/@{{x.id}}">Edit</a>
-                                                <a class="btn btn-success" target="_blank" href="/portfolio#/work/@{{x.searchIndex}}">Preview</a>
+                                               <!--  <a class="btn btn-success" target="_blank" href="/portfolio#/work/@{{x.searchIndex}}">Preview</a> -->
                                                 <button type="button" class="btn btn-danger" ng-click="delete(x)">Delete
                                                 </button>
                                                 <button class="btn btn-secondary" ng-if='x.status == 0' ng-click="active(x)">Active</button>
-                                                <button class="btn btn-warning" ng-if='x.status == 1' ng-click="ban(x)">Ban</button>
+                                                <!-- <button class="btn btn-warning" ng-if='x.status == 1' ng-click="ban(x)">Ban</button> -->
                                             </td>
                                         </tr>
                                     </tbody>
