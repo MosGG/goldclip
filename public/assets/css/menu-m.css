@@ -70,16 +70,18 @@
 .menu-m-content{
   background-color: #F7F6F3;
   position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
+  left: 50%;
+  top: 50%;
+  width: 0%;
   height: 0%;
   z-index: 90;
   overflow: hidden;
+  transform: translate(-50%,-50%);
   transition: all 0.3s ease;
 }
 .menu-m-content-open{
   height: 100%;
+  width: 100%;
 }
 .menu-m-center{
   position: absolute;
