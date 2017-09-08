@@ -88,7 +88,7 @@
 			<img class="wow fadeInUp" data-wow-delay="1.5s" src="/assets/img/ArrowDown.png">
 		</div>
 		<div id="horizontal-1" class="fg-regular parallax">PURE WOOL</div>
-		<div id="horizontal-2" class="fg-regular parallax">PREMIER QUALITY</div>
+		<div id="horizontal-2" class="fg-regular parallax"><div>PREMIER QUALITY</div></div>
 	</div>
 	<div class="second-screen">
 		<div class="section-container">
@@ -127,7 +127,7 @@
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">从此爱上床</h2>
 					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip一款土生土长于澳大利亚维多利亚州的顶级羊毛被，他选择澳大利亚最好的羊毛和材料，澳洲制造认证，国际羊毛局纯羊毛认证，全球无害物质认证，确保每件产品都按照最高的标准进行打造。</p>
-					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow flipInY" data-wow-delay="0.5s">更多信息</button></a>
+					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow pulse" data-wow-delay="0.5s">更多信息</button></a>
 				</div>
 			</div>
 			<div class="news">
@@ -135,7 +135,7 @@
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">温暖“被”至丨御寒大作战</h2>
 					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip顶级羊毛被现已上市，它将成为你生活起居，过节送礼的首选佳品，你还在等待什么，现在就联系我们吧。</p>
-					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow flipInY" data-wow-delay="0.5s">联系我们</button></a>
+					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow pulse" data-wow-delay="0.5s">联系我们</button></a>
 				</div>
 			</div>
 		</div>

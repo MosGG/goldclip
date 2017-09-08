@@ -104,6 +104,9 @@
 		</div>
 	</div>
 
+	<div id="prev-page" class="page-btn">Prev</div>
+	<div id="next-page" class="page-btn">Next</div>
+	
 	<div class="body-content">
 		@yield('body')
 	</div>
@@ -114,7 +117,7 @@
 	<!-- FOOTER -->
 	<div class="footer">
 	    <div class="left_footer">
-	    	© Gold Clip 2017 - All Rights Reserved, Made with ❤ by Gold Clip
+	    	© Gold Clip 2017 - All Rights Reserved, Made with <i class="fa fa-heart"></i> by Gold Clip
     	</div>
     	<div class="icon">
 	      	<a href="javascript:$('.qrcode').fadeIn();"><img src="assets/img/Weixing.png"></a>

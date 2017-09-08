@@ -74,7 +74,7 @@ html,body {
 .nav {
   position: fixed;
   width: 80px;
-  height: 480px;
+  /*height: 480px;*/
   top: 50%;
   right: 0px;
   transform: translate(0, -50%);
