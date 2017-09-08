@@ -61,8 +61,12 @@ body{
 .parallax{
 	position: fixed;
 	color:#fff;
-	width: 2000px;
+	width: 100%;
+	overflow-x: scroll;
 	font-size: 230px;
+}
+.parallax div{
+	width: 2000px;
 }
 .section-container{
 	padding:120px;
@@ -313,4 +317,125 @@ p{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+@media(max-width: 1200px){
+	.xl-text{
+		font-size: 40px;
+	}
+	.section-title{
+		font-size:34px;
+	}
+	.news-desc h2{
+		font-size: 34px;
+	}
+	p{
+		font-size: 12px;
+	}
+	.parallax{
+		font-size: 200px;
+	}
+}
+@media(max-width: 991px){
+	.xl-text{
+		font-size: 36px;
+	}
+	.section-title{
+		font-size: 28px;
+	}
+	.news-desc h2{
+		font-size: 28px;
+	}
+	p{
+		font-size: 10px;
+	}
+	.parallax{
+		font-size: 160px;
+	}
+	.news-desc{
+		height: 320px;
+		padding: 20px;
+	}
+	.section-container{
+		padding: 80px;
+	}
+}
+@media(max-width: 768px){
+	.logo{
+		top: 40px;
+		left: 40px;
+	}
+	.discover-goldclip{
+		left: 40px;
+		bottom: 20px;
+	}
+	.parallax{
+		font-size: 120px;
+	}
+	.section-container{
+		padding: 40px;
+	}
+	.home-button {
+	    width: 70%;
+	}
+}
+@media(max-width: 414px){
+	.logo{
+		top: 40px;
+		left: 40px;
+		width: 180px;
+	}
+	.xl-text{
+		font-size: 30px;
+	}
+	.news-desc h2{
+		font-size: 28px;
+	}
+	.discover-goldclip{
+		left: 40px;
+		bottom: 20px;
+	}
+	.parallax{
+		font-size: 120px;
+	}
+	.section-container{
+		padding: 20px;
+	}
+	.home-button {
+	    width: 70%;
+	}
+	.section-number{
+		font-size: 60px;
+		float: unset;
+	}
+	.section-title{
+		font-size: 20px;
+		/*padding: px;*/
+	}
+	.section-desc{
+		margin-left: 0px;
+	}
+	.sections{
+		padding-bottom: 50px;
+	}
+	.news-image{
+		width: 100%;
+		float: unset;
+		height: 150px;
+	}
+	.news-desc{
+		margin-left: 0;
+	}
+	.home-button {
+    	width: calc(100% - 40px);
+	}
+	.home-footer-links{
+		font-size: 14px;
+	}
+	.second-screen{
+		border: 20px solid #fff;
+	}
+	.home-footer-icons img{
+		width: 30px;
+		object-fit: contain;
+	}
 }

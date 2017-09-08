@@ -575,6 +575,14 @@
       }
   }, 500, {immediate:true}));
 
+  $(".page-btn").on('click', _.debounce(function(e){
+    if ($(this).attr('id') == 'next-page') {
+      rotateBox(1);
+    } else {
+      rotateBox(-1);
+    }
+  }, 500, {immediate:true}));
+
   var degree = 30;
   function rotateBox(a){
     var oldDegree = 0;
@@ -598,7 +606,8 @@
     }
     var sliderCurrent = $(obj).parent().parent().parent();
     var parent = $(obj).parent();
-    var scroll = parent[0].offsetTop - sliderCurrent[0].offsetTop;
+    var scroll = parent[0].offsetTop; //- sliderCurrent[0].offsetTop;
+    console.log(scroll);
     sliderCurrent.animate({ scrollTop: scroll }, "500");
   }
 </script>

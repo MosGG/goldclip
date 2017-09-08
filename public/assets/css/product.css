@@ -8,10 +8,10 @@
 
 .container2 {
   width: calc(50% - 120px);
-  height: 70%;
   position: absolute;
   left: 50%;
-  top: 15%;
+  top:50%;
+  transform: translate(0,-50%);
   padding-left: 40px;
   padding-right: 80px;
 }
@@ -87,7 +87,7 @@
   max-width: 506px;
 }
 .ppt{
-  overflow: auto;
+  overflow-y: auto;
   height:700px!important;
   position: relative;
 }
@@ -98,7 +98,8 @@
   transform: translate(-50%, -50%);*/
   /*margin:0 auto;*/
   margin-left: 50px;
-  max-width: 360px;
+  margin-right: 50px;
+  /*max-width: 360px;*/
   text-align: center;
   overflow: hidden;
 }
@@ -153,6 +154,7 @@
   width: 40px;
   height: 40px;
   background:url("/assets/img/expand.png");
+  background-size: contain;
 }
 .item-des{
   margin-top: 60px;
@@ -167,7 +169,7 @@
   margin-top:100px!important;
 }
 .special-margin-2{
-  margin-top:200px;
+  margin-top:200px!important;;
 }
 .item-name span{
   position: absolute;
@@ -348,7 +350,7 @@
   background-image: url(../images/side2.png); 
 }*/
 
-.specular{
+/*.specular{
   position: absolute;
   top: -50px;
   left: -17px;
@@ -372,7 +374,7 @@ background-size: 500px 500px;
 -webkit-background-size:500px 500px;
 -moz-background-size:500px 500px;
 
--moz-mask: -moz-linear-gradient(top, #fff, transparent 50%); /*This doesn't work in Firefox..needs SVG or something*/
+-moz-mask: -moz-linear-gradient(top, #fff, transparent 50%); 
 -webkit-mask: -webkit-linear-gradient(top, #fff, transparent 50%);
 mask: linear-gradient(top, #fff, transparent 50%);
 
@@ -380,15 +382,15 @@ mask: linear-gradient(top, #fff, transparent 50%);
 -moz-transition: left 0.3s linear;
 transition: left 0.3s linear;
 }
-
+*/
 /*.game-box:hover .specular {
    left: -120px;
 }*/
 
-.specular-left {
+/*.specular-left {
   position: absolute;
   top: 0px;
-  /*left: 20px;*/
+  left: 20px;
   z-index: 10000;
   width:41px;
   height: 320px;
@@ -403,7 +405,7 @@ background-size: 41px 500px;
 -webkit-background-size:41px 500px;
 -moz-background-size:41px 500px;
 
--moz-mask: -moz-linear-gradient(left, #fff, transparent 50%); /*This doesn't work in Firefox..needs SVG or something*/
+-moz-mask: -moz-linear-gradient(left, #fff, transparent 50%); 
 -webkit-mask: -webkit-linear-gradient(left, #fff, transparent 50%);
 mask: linear-gradient(left, #fff, transparent 50%);
 
@@ -411,7 +413,7 @@ mask: linear-gradient(left, #fff, transparent 50%);
   -moz-transition: left 0.25s linear;
   transition: left 0.25s linear;
 
-}
+}*/
 /*
 .game-box:hover .specular-left {
   left: 0px;
@@ -504,4 +506,232 @@ mask: linear-gradient(left, #fff, transparent 50%);
 .btn:hover{
   background-color: #896C4C;
 
+}
+@media(max-width: 1200px){
+
+  .product-detail{
+    width: unset;
+  }
+  .number{
+    font-size: 120px;
+  }
+  .container{
+    top: 12%;
+  }
+/*  .container2{
+    top:10%;
+    height: 80%;
+  }*/
+  .special-padding{
+    padding: 10px 0;
+  }
+  .product-item{
+    margin: 10px 0;
+  }
+  .ppt{
+    height: 550px!important;
+  }
+  .game-list{
+    left: 22%;
+    top: 30%;
+  }
+  .product-select{
+    height: 170px;
+  }
+  .left,.right{
+    float: unset;
+  }
+  .special-margin{
+    margin-top: 0!important;
+  }
+  .btn{
+    margin-left:71px;
+  }
+  .detail-right-sologan{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .product-right{
+    margin-right: 0;
+  }
+  .product-right h2{
+    font-size: 40px;
+  }
+  .product-right p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .product-right-5{
+    width: unset;
+  }
+}
+@media(max-width: 991px){
+  .circle{
+    left: -50px;
+  }
+  .container3{
+    left: -230px;
+    font-size: 12px;
+  }
+  .container{
+    top: 10%;
+  }
+  .container2{
+    padding-left: 0;
+    width: calc(50% - 40px);
+  }
+  .number{
+    font-size: 80px;
+  }
+  .game-list{
+      transform: scale(0.7);
+      left: 16%;
+  }
+  .ppt{
+    height: 400px!important;
+  }
+  .product-right-5{
+    top:0;
+    transform: unset;
+    /*width: 285px;*/
+    padding-left: 40px;
+  }
+}
+@media(max-height: 750px){
+  .circle{
+    left: -50px;
+  }
+  .container3{
+    left: -230px;
+    font-size: 12px;
+  }
+  .container{
+    top: 10%;
+  }
+  .container2{
+    padding-left: 0;
+    width: calc(50% - 40px);
+  }
+  .number{
+    font-size: 80px;
+  }
+  .game-list{
+      transform: scale(0.7);
+      left: 16%;
+  }
+  .ppt{
+    height: 400px!important;
+  }
+  .product-right-5{
+    top:0;
+    transform: unset;
+    width: 285px;
+    padding-left: 40px;
+  }
+}
+@media(max-width: 768px){
+  .circle{
+    left: -70px;
+  }
+  .container3{
+    display: none;
+  }
+  .container{
+    left: 50px;
+  }
+  .container2{
+    left: 40%;
+    padding-right: 0;
+    width: 55%;
+  }
+  .left-block{
+    display: none;
+  }
+  .number{
+    font-size: 70p
+  }
+  .text{
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .ppt{
+    /*height: 350px!important;*/
+  }
+  .game-list{
+    transform: scale(0.5);
+    left: 0px;
+  }
+  .product-warm{
+    left: 15px;
+  }
+  .product-warm img{
+    height: 60px;
+    width: auto;
+  }
+  .item-des{
+    margin-top: 40px;
+  }
+  .item-expand{
+    width: 30px;
+    height: 30px;
+    top:5px;
+  }
+  .item-name{
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .item-name img{
+    height: 20px;
+    width: auto;
+  }
+  .item-name span{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .special-line-height{
+    line-height: 30px!important;
+  }
+  .special-margin {
+    margin-top: 50px!important;
+  }
+  .p-price label{
+    line-height: 18px;
+  }
+  .p-price{
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .product-select{
+    margin-bottom: 0;
+  }
+}
+@media(max-width: 500px){
+  .game-list{
+    transform: scale(0.2);
+    top: 11%;
+    left: 160px;
+  }
+  .container2{
+    width: calc(100% - 40px);
+    top: 60%;
+    left: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .special-margin-2{
+    margin-top: 50px!important;
+  }
+  .btn{
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+@media(max-height: 500px){
+  .ppt{
+    height: 280px!important;
+  }
+  .special-margin,
+  .special-margin-2{
+    margin-top: 10px!important;
+  }
 }

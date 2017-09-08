@@ -119,12 +119,12 @@
 		<div class="ppt">
 			<div class="detail-left">
 				<p><span style="color:#896C4C">Gold Clip Wool羊毛源自维多利亚羊毛处理机构Victoria Wool Processor澳洲仅有的三家羊毛处理和供应商中最大的一家，羊毛来源经过VWP和羊毛牧场双重认证，品质保证的农场-Shellal。</span></p>
-				<div style="text-align:right;padding: 10px 0;"><img src="/assets/img/about-6-1.png"></div>
+				<div style="text-align:right;padding: 10px 0;"><img class="certify-img" src="/assets/img/about-6-1.png"></div>
 				<p>Shellal具有50年悠久历史的牧羊场位于维多利亚西南部，是由维多利亚羊毛处理机构考核及认证的优质农场。<br><br>Shella农场的羊均有登记，且每只羊的健康状况都受澳洲动物健康协会的监管。在维多利亚州高优质的牧场有8到10个，其中Shellal是这其中的佼佼者，Gold Clip羊毛被所使用的就是他们牧场的羊毛原料。</p>
 				<div style="text-align: center;">
-					<img src="/assets/img/about-6-2.png">
-					<img style="padding: 20px;" src="/assets/img/about-6-3.png">
-					<img src="/assets/img/about-6-4.png">
+					<img class="certify-img" src="/assets/img/about-6-2.png">
+					<img class="certify-img" style="padding: 0 20px;" src="/assets/img/about-6-3.png">
+					<img class="certify-img" src="/assets/img/about-6-4.png">
 				</div>
 			</div>
 			<div class="detail-right">

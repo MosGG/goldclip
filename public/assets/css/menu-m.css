@@ -1,7 +1,7 @@
 #menu-m{
   position: fixed;
-  top:60px;
-  right: 120px;
+  top:20px;
+  right: 80px;
   z-index: 100;
   width: 42px;
   cursor: pointer;
@@ -77,11 +77,13 @@
   z-index: 90;
   overflow: hidden;
   transform: translate(-50%,-50%);
+  opacity: 0;
   transition: all 0.3s ease;
 }
 .menu-m-content-open{
   height: 100%;
   width: 100%;
+  opacity: 1;
 }
 .menu-m-center{
   position: absolute;
@@ -111,12 +113,18 @@
     display: block;
   }
 }
-@media(max-width: 441px){
+@media(max-width: 500px){
   #menu-m{
-     right: 40px;
-     top:40px;
+     right: 20px;
+     top:20px;
   }
   .menu-t{
     display: none;
+  }
+  .close-t{
+    display: none;
+  }
+  .menu-m-center h2{
+    font-size: 26px;
   }
 }
