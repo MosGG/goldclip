@@ -10,20 +10,32 @@ use Mail;
 class EmailController extends Controller
 {
     public function messageSend(Request $request){
+  $fname = $request->input('fname');
+  $lname = $request->input('lname');
+  $email = $request->input('email');
+  $phone = $request->input('phone');
+  $message = $request->input('message');
+  $future = $request->input('future');
 
-    	$name = $request->input('name');
-    	$email = $request->input('email');
-    	$message = $request->input('message');
 
-    	$messageBody = "Name: " . $name ."<br>";
-        $messageBody .= "Email: " . $email ."<br>";
-        $messageBody .= "Message: " . $message ."<br>";
 
-    	Mail::send('emails.emailTemplate', ['messageBody' => $messageBody], function ($message) use ($name, $email) {
-                $message->to("tony@cheee.com.au", "Message From CHEEE Website")->subject("Message From CHEEE Website - " . $name);
-                $message->replyTo($email, $name);
-            });
+  $messageBody = "Name: " . $fname ."<br>";
+  $messageBody .= "Email: " . $email ."<br>";
+  $messageBody .= "Phone: " . $phone ."<br>";
+  $messageBody .= "Message: " . $message ."<br>";
+  $messageBody .= "Whether Need notice: " . $future ."<br>";
 
-        return '{"sendstatus": 1, "message":"Message has been sent, CHEEE will contact you as soon as possible!"}';
-    }	
+  $email = ["xiaofan@cheee.com.au","eazyee6@gmail.com"];
+  Mail::send('emails.emailTemplate', ['messageBody' => $messageBody], function ($m) use ($fname,$email) {
+    foreach ($email as $e)
+     {
+       $m->from('hello@app.com', 'Your Application');
+
+       $m->to($e)->subject("Message From client - " . $fname);
+     }
+
+
+    });
+    return '{"sendstatus": 1, "message":"Message has been sent, Goldclip will contact you as soon as possible!"}';
+  }
 }

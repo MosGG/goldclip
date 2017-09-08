@@ -24,7 +24,7 @@ class PagesController extends Controller
             }
             return json_encode($res);
         } else {
-            return view('pages.login');   
+            return view('pages.login');
         }
     }
 
@@ -33,8 +33,9 @@ class PagesController extends Controller
     	return view('pages.portfolio')->with('portfolios', json_encode($portfolios));
     }
 
-    public function contact(){
-        return view('pages.contact');
+    public function contact(Request $request){
+        $text = $this->getTranslate($request->input("language"));
+        return view('pages.contact')->with('text', $text);
     }
 
     public function about(Request $request){
@@ -100,9 +101,9 @@ class PagesController extends Controller
         $lang_key = $language;
         if ($lang_key !== "ch" && $lang_key !== "en") {
             $lang_key = "en";
-            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4);   
+            $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 4);
             if (preg_match("/zh-c/i", $lang) || preg_match("/zh/i", $lang)) {
-                $lang_key = 'ch';  
+                $lang_key = 'ch';
             }
         }
         $translate = DB::table('translate')->get(array("tkey",$lang_key));

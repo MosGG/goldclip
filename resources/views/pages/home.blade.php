@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	
+
 	<title>Gold Clip - Home</title>
-	
+
 	<!-- Favicons -->
 	<!-- <link rel="shortcut icon" href="assets/img/Cheee_heart.png"> -->
 	<!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
@@ -26,7 +26,7 @@
 <body>
 
 	<div id="menu" class="nav">
-	<?php 
+	<?php
 		if ($text['language'] == 'ch') {
 			echo '<a href="?language=en"><div class="en_cn border_right">EN</div></a><div class="brown en_cn border_left ">中</div>';
 		} else {

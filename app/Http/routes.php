@@ -93,11 +93,11 @@ Route::group(['middleware' => 'admin'], function () {
         'as' => 'media-library',
         'uses' => 'admin\PagesController@mediaLibrary'
     ]);
-    
+
     Route::post('/media-library-new-folder', 'admin\PagesController@mediaLibraryNewFolder');
     Route::post('/media-library-delete-folder', 'admin\PagesController@mediaLibraryDelFolder');
     Route::post('/media-library-move', 'admin\PagesController@mediaLibraryMove');
-    
+
     Route::get('/logout-action', [
         'as' => 'logout-action',
         'uses' => 'admin\AdminActionController@logout'
@@ -123,7 +123,7 @@ Route::group(['middleware' => 'admin'], function () {
         'uses' => 'admin\PagesController@portfolioEdit'
     ]);
 
-    
+
 
     /*
      Admin Ajax Call From View
@@ -134,15 +134,15 @@ Route::group(['middleware' => 'admin'], function () {
     Route::post('/admin-delete-action', 'admin\AdminActionController@adminDelete');
 
     Route::post('/media-upload', 'admin\MediaLibraryController@mediaUpload');
-    
+
     Route::post('/media-upload-to-folder', 'admin\MediaLibraryController@mediaUploadToFolder');
-    
+
     Route::post('/delete-media-file', 'admin\MediaLibraryController@deleteMediaFile');
 
     Route::post('/file-upload', 'admin\MediaLibraryController@fileUpload');
     Route::post('/document-delete-action', 'admin\MediaLibraryController@deleteFile');
 
-   
+
 
     Route::post('/portfolio-add-action', 'admin\PortfolioActionController@portfolioNew');
     Route::post('/portfolio-edit-action', 'admin\PortfolioActionController@portfolioEdit');
@@ -179,6 +179,7 @@ Route::group(['middleware' => 'web'], function () {
         'as' => 'portfolio',
         'uses' => 'PagesController@portfolio'
     ]);
+    
 
     Route::get('/contact', [
         'as' => 'contact',

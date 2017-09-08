@@ -39,13 +39,6 @@ html,body {
   margin: 40px;
 }
 
-.title {
-  position: absolute;
-  left: 70px;
-  top: 80px;
-  z-index: 100
-}
-
 .circle {
   position: absolute;
   top: 50%;
@@ -231,49 +224,4 @@ html,body {
 }
 .current-tab{
   color: #000;
-}
-.left-block{
-  position: absolute;
-  width: 290px;
-  height: 250px;
-  overflow: hidden;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-.uppertitle{
-  position: absolute;
-  left: 100%;
-  font-size: 230px;
-  font-weight: bold;
-  color: #fff;
-  animation: upmove 60s linear infinite;
-  width: 2500px;
-  transition: opacity 1s linear;
-}
-.lowertitle{
-  position: absolute;
-  right: 100%;
-  bottom: -85px;
-  font-size: 230px;
-  font-weight: bold;
-  color: #fff;
-  animation: downmove 60s linear infinite;
-  width: 3000px;
-  transition: opacity 1s linear;
-}
-.qrcode{
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 200;
-  display: none;
-}
-.qrcode img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
