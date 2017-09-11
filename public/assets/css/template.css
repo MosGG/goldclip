@@ -25,6 +25,7 @@ html,body {
   overflow: hidden;
   background-color: #fff;
   font-family: 'fg-regular';
+  margin:0;
 }
 .brown{
   color: #896C4C!important;
@@ -51,6 +52,7 @@ html,body {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
 }
 
 .footer {
@@ -77,6 +79,7 @@ html,body {
   margin-left: 30px;
   top: 22px;
   transform: translate(0,-50%);
+  -ms-transform: translate(0, -50%);
 }
 
 .nav {
@@ -86,6 +89,7 @@ html,body {
   top: 50%;
   right: 0px;
   transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   z-index: 100;
 }
 .en_cn {
@@ -134,7 +138,8 @@ html,body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotateZ(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
   line-height: 80px;
 }
 
@@ -158,7 +163,8 @@ html,body {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotateZ(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .hvr-underline-from-left-white,
@@ -215,6 +221,7 @@ html,body {
   left: -175px;
   top: 50%;
   transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
   z-index: 10;
   font-size: 14px;
   letter-spacing: 1px;
@@ -240,6 +247,7 @@ html,body {
   overflow: hidden;
   top: 50%;
   transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
 }
 .uppertitle{
   position: absolute;
@@ -287,6 +295,7 @@ html,body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .page-btn{
   position: absolute;
@@ -506,6 +515,7 @@ html,body {
     top:-57px;
     float: unset;
     transform: translate(0,50%);
+    -ms-transform: translate(0,50%);
   }
   .icon img{
     width: 20px;

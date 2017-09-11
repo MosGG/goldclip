@@ -77,7 +77,7 @@ window.initMap = function() {
       "featureType": "road.highway",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#dadada"
+        "color": "#FFFFFF"
       }]
     },
     {
@@ -98,7 +98,7 @@ window.initMap = function() {
       "featureType": "transit.line",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#e5e5e5"
+        "color": "#F7F7F7"
       }]
     },
     {
@@ -112,7 +112,7 @@ window.initMap = function() {
       "featureType": "water",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#c9c9c9"
+        "color": "#EDEDED"
       }]
     },
     {

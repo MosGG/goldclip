@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>test</title>
+  <title>Contact Us - GoldClip</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="/assets/css/template.css">
@@ -15,7 +15,7 @@
 <body>
   <div class="background"></div>
   <!-- <div class="title"><img src="/assets/img/title.png" height="36" width="306" style="max-width: 100%"></div> -->
-  <img class="logo" src="/assets/img/goldclip_logo.png">
+  <a href="/?language=<?=$text['language']?>"><img class="logo" src="/assets/img/goldclip_logo.png"></a>
   <div id="menu-m">
     <div class="dot"></div>
     <div id="top-d" class="dot"></div>
@@ -236,8 +236,8 @@
   });
   });
   </script>
-  <script type="text/javascript" src="assets/js/newcontact.js"></script>
-  <script type="text/javascript" src="assets/js/map.js"></script>
+  <script type="text/javascript" src="/assets/js/newcontact.js"></script>
+  <script type="text/javascript" src="/assets/js/map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ9dJuakDsSoyFHKkZ8F-S4pixZGXhMfg=&callback=initMap"></script>
 </body>
 

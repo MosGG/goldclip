@@ -2,6 +2,10 @@
     font-family: 'fg-regular';
     src: url('/assets/font/FoundersGrotesk-Regular.otf');
 }
+@font-face {
+    font-family: 'l-bold';
+    src: url('/assets/font/Lyon Bold.ttf');
+}
 body{
 	font-family: 'fg-regular';
 }
@@ -18,6 +22,7 @@ body{
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
   	background-size: cover;
   	transition: 1s opacity;
 }
@@ -55,13 +60,13 @@ body{
 }
 #horizontal-2{
 	bottom: -80px;
-	right: 100%;
+	right: 150%;
 	z-index: 60;
 }
 .parallax{
 	position: fixed;
 	color:#fff;
-	width: 100%;
+	width: 2000px;
 	font-size: 230px;
 }
 .parallax div{
@@ -179,6 +184,7 @@ p{
 	margin: 0 20px;
 	position: relative;
 	transform: translate(0,50%);
+	-ms-transform: translate(0,50%);
 }
 .nav {
   position: fixed;
@@ -187,6 +193,7 @@ p{
   top: 50%;
   right: -80px;
   transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   z-index: 100;
 }
 
@@ -236,7 +243,8 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotateZ(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
   line-height: 80px;
 }
 
@@ -260,7 +268,8 @@ p{
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotateZ(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .hvr-underline-from-left-white,
@@ -316,6 +325,7 @@ p{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 @media(max-width: 1200px){
 	.xl-text{
@@ -362,6 +372,7 @@ p{
 	.logo{
 		top: 40px;
 		left: 40px;
+		width: 180px;
 	}
 	.discover-goldclip{
 		left: 40px;
@@ -378,11 +389,6 @@ p{
 	}
 }
 @media(max-width: 414px){
-	.logo{
-		top: 40px;
-		left: 40px;
-		width: 180px;
-	}
 	.xl-text{
 		font-size: 30px;
 	}

@@ -2,7 +2,8 @@ function scrollHorizontally(e) {
   // e = window.event || e;
   // var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
   var scrollSpeed = 1;
-  var delta = document.body.scrollTop - document.body.clientHeight;
+  var scrollT = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  var delta = scrollT - document.body.clientHeight;
   var obj1 = document.getElementById('horizontal-1');
   obj1.style.left = document.body.clientWidth - (delta * scrollSpeed)  - 50 + 'px';
   var obj2 = document.getElementById('horizontal-2');
@@ -15,16 +16,23 @@ function scrollHorizontally(e) {
   isInScreen(document.getElementById('video-3'));
   // e.preventDefault();
 }
+// $( document ).ready(function() {
+//   console.log(window.addEventListener);
+//   if (window.addEventListener) {
+//     // IE9, Chrome, Safari, Opera
+//     window.addEventListener("mousewheel", scrollHorizontally, false);
+//     // Firefox
+//     window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+//   } else {
+//     // IE 6/7/8
+//     window.attachEvent("onmousewheel", scrollHorizontally);
+//   }
+// });
 
-if (window.addEventListener) {
-  // IE9, Chrome, Safari, Opera
-  window.addEventListener("mousewheel", scrollHorizontally, false);
-  // Firefox
-  window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-} else {
-  // IE 6/7/8
-  window.attachEvent("onmousewheel", scrollHorizontally);
-}
+$(window).on('mousewheel DOMMouseScroll',function(e){
+  scrollHorizontally(e);
+});
+
 
 function isInScreen(ele){
   if (ele.getBoundingClientRect().top < window.innerHeight &&

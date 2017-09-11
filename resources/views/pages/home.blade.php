@@ -55,8 +55,8 @@
   		<div class="dot"></div>
   		<div id="bottom-d" class="dot"></div>
   		<div class="dot"></div>
-  		<div class="menu-t menu-text">MENU</div>
-  		<div class="close-t menu-text">CLOSE</div>
+  		<div class="menu-t menu-text"><?=$text['menu']?></div>
+  		<div class="close-t menu-text"><?=$text['close']?></div>
   	</div>
 	<div class="menu-m-content">
 		<div class="menu-m-center">
@@ -69,10 +69,10 @@
 				}
 			?>
 			</div>
-			<a href="/product?language=<?=$text['language']?>"><h2>Product</h2></a>
-			<a href="/process?language=<?=$text['language']?>"><h2>Process</h2></a>
-			<a href="/about?language=<?=$text['language']?>"><h2>About Us</h2></a>
-			<a href="/contact?language=<?=$text['language']?>"><h2>Contact Us</h2></a>
+			<a href="/product?language=<?=$text['language']?>"><h2><?=$text['product']?></h2></a>
+			<a href="/process?language=<?=$text['language']?>"><h2><?=$text['process']?></h2></a>
+			<a href="/about?language=<?=$text['language']?>"><h2><?=$text['about']?></h2></a>
+			<a href="/contact?language=<?=$text['language']?>"><h2><?=$text['contact_us']?></h2></a>
 		</div>
 	</div>
 
@@ -99,8 +99,8 @@
 					</div>
 					<div class="section-desc">
 						<h2 class="section-title wow slideInDown">一张能承载起整家人温暖的好被子</h2>
-						<p class="p-left wow fadeIn" data-wow-delay="0.5s">澳大利亚得天独厚的气候环境孕育出世界最好的羊毛，再加上澳洲成熟的碳化技术，便使澳洲羊毛出口量世界第一，羊毛被也成为居家生活的必备品。 Gold Clip Wool羊毛源自维多利亚羊毛处理机构</p>
-						<p class="p-right wow fadeIn" data-wow-delay="0.5s">Victoria Wool Processor澳洲仅有的三家羊毛处理和供应商中最大的一家，羊毛来源经过VWP和羊毛牧场双重认证，品质保证的农场-Shellal。</p>
+						<p class="p-left wow fadeIn" data-wow-delay="0.5s"><?=$text['home-1']?></p>
+						<p class="p-right wow fadeIn" data-wow-delay="0.5s"><?=$text['home-2']?></p>
 					</div>
 				</div>
 				<div class="bottomvideo wow fadeIn">
@@ -126,16 +126,16 @@
 				<img class="news-image" src="/assets/img/news-1.png">
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">从此爱上床</h2>
-					<p class="wow fadeIn" data-wow-delay="0.6s">Gold Clip一款土生土长于澳大利亚维多利亚州的顶级羊毛被，他选择澳大利亚最好的羊毛和材料，澳洲制造认证，国际羊毛局纯羊毛认证，全球无害物质认证，确保每件产品都按照最高的标准进行打造。</p>
-					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s">更多信息</button></a>
+					<p class="wow fadeIn" data-wow-delay="0.6s"><?=$text['home-3']?></p>
+					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s"><?=$text['moreinfo']?></button></a>
 				</div>
 			</div>
 			<div class="news">
 				<img class="news-image" src="/assets/img/news-2.png">
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">温暖“被”至丨御寒大作战</h2>
-					<p class="wow fadeIn" data-wow-delay="0.6s">Gold Clip顶级羊毛被现已上市，它将成为你生活起居，过节送礼的首选佳品，你还在等待什么，现在就联系我们吧。</p>
-					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s">联系我们</button></a>
+					<p class="wow fadeIn" data-wow-delay="0.6s"><?=$text['home-4']?></p>
+					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s"><?=$text['contact_us']?></button></a>
 				</div>
 			</div>
 		</div>
@@ -145,10 +145,10 @@
 			<img class="wow pulse" src="/assets/img/goldclip_logo.png">
 		</div>
 		<div class="home-footer-links fg-regular wow fadeIn">
-			<a href="/about?language=<?=$text['language']?>">ABOUT US</a> |
-			<a href="/product?language=<?=$text['language']?>">PRODUCT</a> |
-			<a href="/process?language=<?=$text['language']?>">PROCESS</a> |
-			<a href="/privacy">PRIVACY POLICY</a>
+			<a href="/about?language=<?=$text['language']?>"><?=$text['about']?></a> |
+			<a href="/product?language=<?=$text['language']?>"><?=$text['product']?></a> |
+			<a href="/process?language=<?=$text['language']?>"><?=$text['process']?></a> |
+			<a href="/privacy"><?=$text['privacy']?></a>
 		</div>
 		<div class="home-footer-cheee fg-regular wow fadeIn" data-wow-delay="0.3s">
 			© Gold Clip 2017 - All Rights Reserved<br>Made with <i class="fa fa-heart"></i> by Gold Clip
@@ -167,8 +167,11 @@
 <script src="/assets/js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/assets/js/home.js"></script>
 <script type="text/javascript" src="/assets/js/wow.min.js"></script>
+<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>
 <script type="text/javascript">
 	new WOW().init();
+
+	
 
 	$("#menu-m").click(function(){
 		$("#top-d").toggleClass('top-open');

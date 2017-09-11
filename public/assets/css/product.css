@@ -12,6 +12,7 @@
   left: 50%;
   top:50%;
   transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
   padding-left: 40px;
   padding-right: 80px;
 }
@@ -491,6 +492,7 @@ mask: linear-gradient(left, #fff, transparent 50%);
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
       width: 528px;
 }
 .btn{

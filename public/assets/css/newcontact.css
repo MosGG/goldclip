@@ -26,6 +26,7 @@ body {
   left: 50%;
   top: 6%;
   transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
 }
 
 .required {
@@ -43,6 +44,7 @@ body {
   top: 50%;
   z-index: 100;
   transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   right: 0px;
 }
 
@@ -53,6 +55,7 @@ body {
   left: 50%;
   top: 58%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   display: inline-block;
 }
 
@@ -126,6 +129,7 @@ left: 8%;
   float: left;
   left: 50%;
   transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
 }
 
 .form-control:focus {
@@ -144,6 +148,7 @@ left: 8%;
   background-color: #F7F6F3;
   left: 50%;
   transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
 }
 
 .form_text:focus {
@@ -308,6 +313,7 @@ input[type="checkbox"]:checked+label span {
   right: -30%;
   top: 65%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .ctext {
@@ -316,6 +322,7 @@ input[type="checkbox"]:checked+label span {
   top: -6%;
   top: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .icon_img {
@@ -363,6 +370,7 @@ input[type="checkbox"]:checked+label span {
     z-index: 100;
     width: 74%;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     text-align: center;
   }
   /*.nav {
@@ -376,6 +384,7 @@ input[type="checkbox"]:checked+label span {
     top: 88px;
     left: 50%;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
   }
   .form-group {
     margin-bottom: 22px;
@@ -422,6 +431,7 @@ input[type="checkbox"]:checked+label span {
     width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     right: 0;
     top: 460px;
     text-align: center;
@@ -432,6 +442,7 @@ input[type="checkbox"]:checked+label span {
     width: 300px;
     left: 50%;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     top: -300px;
   }
   .content {
@@ -447,6 +458,7 @@ input[type="checkbox"]:checked+label span {
     height: 200px;
     top: 314px;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
   }
   .qr img {
     width: 100%;
@@ -460,5 +472,6 @@ input[type="checkbox"]:checked+label span {
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
   }
 }
