@@ -13,7 +13,7 @@
 
 .container2 {
   width: calc(100% - 410px);
-  height: 57%;
+  /*height: 57%;*/
   position: absolute;
   left: 22%;
   top: 35%;
@@ -175,7 +175,22 @@
 }
 .ppt{
   overflow: auto;
-  height: 450px!important;
+  /*height: 450px!important;*/
+}
+.l-page-btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 50;
+}
+#left-block-top{
+  top: 0;
+  bottom: 50%;
+}
+#left-block-bottom{
+  top: 50%;
+  bottom: 0;
 }
 @media(max-width: 1200px){
   .number{
@@ -192,9 +207,7 @@
   }
 }
 @media(max-width: 991px){
-  .circle{
-    left: -50px;
-  }
+
   .container3{
     left: -245px;
     font-size: 12px;
@@ -250,10 +263,8 @@
     height: auto;
   }
 }
-@media(max-height: 750px){
-  .circle{
-    left: -50px;
-  }
+@media(max-height: 700px){
+  
   .container3{
     left: -245px;
     font-size: 12px;
@@ -307,12 +318,13 @@
   .certify-img{
     width: 70px!important;
     height: auto;
+  }
+  .ppt{
+    /*height: 350px!important;*/
   }
 }
 @media(max-width: 768px){
-  .circle{
-    left: -70px;
-  }
+  
   .container3{
     display: none;
   }
@@ -334,7 +346,7 @@
     font-size: 20px;
   }
   .ppt{
-    height: 350px!important;
+    /*height: 350px!important;*/
   }
 }
 @media(max-width: 500px){
@@ -342,6 +354,7 @@
     float: unset;
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
   .detail-right{
     margin-left: 0;
@@ -351,5 +364,12 @@
   #carousel2{
     overflow: scroll;
   }
-
+}
+@media(max-height: 320px){
+  .container{
+    transform: scale(0.5) translate(-50%,-44%);
+  }
+  .detail-left{
+    font-size: 10px;
+  }
 }

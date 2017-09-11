@@ -88,7 +88,7 @@
 }
 .ppt{
   overflow-y: auto;
-  height:700px!important;
+  /*height:700px!important;*/
   position: relative;
 }
 .product-right{/*
@@ -507,6 +507,21 @@ mask: linear-gradient(left, #fff, transparent 50%);
   background-color: #896C4C;
 
 }
+.l-page-btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 50;
+}
+#left-block-top{
+  top: 0;
+  bottom: 50%;
+}
+#left-block-bottom{
+  top: 50%;
+  bottom: 0;
+}
 @media(max-width: 1200px){
 
   .product-detail{
@@ -529,7 +544,7 @@ mask: linear-gradient(left, #fff, transparent 50%);
     margin: 10px 0;
   }
   .ppt{
-    height: 550px!important;
+    /*height: 550px!important;*/
   }
   .game-list{
     left: 22%;
@@ -564,6 +579,9 @@ mask: linear-gradient(left, #fff, transparent 50%);
   .product-right-5{
     width: unset;
   }
+  .p-price{
+    margin-bottom: 10px;
+  }
 }
 @media(max-width: 991px){
   .circle{
@@ -588,7 +606,7 @@ mask: linear-gradient(left, #fff, transparent 50%);
       left: 16%;
   }
   .ppt{
-    height: 400px!important;
+    /*height: 400px!important;*/
   }
   .product-right-5{
     top:0;
@@ -620,7 +638,7 @@ mask: linear-gradient(left, #fff, transparent 50%);
       left: 16%;
   }
   .ppt{
-    height: 400px!important;
+    /*height: 400px!important;*/
   }
   .product-right-5{
     top:0;
@@ -728,10 +746,53 @@ mask: linear-gradient(left, #fff, transparent 50%);
 }
 @media(max-height: 500px){
   .ppt{
-    height: 280px!important;
+    /*height: 280px!important;*/
   }
   .special-margin,
   .special-margin-2{
     margin-top: 10px!important;
+  }
+}
+@media(max-width: 413px){
+  .game-list{
+    display: none;
+  }
+  .p-price{
+    width: 170px;
+  }
+  .p-p-title{
+    font-size: 10px;
+  }
+  .p-p-price{
+    font-size: 12px;
+  }
+  .btn{
+    width: 170px;
+    margin-left: 20px;
+  }
+  .detail-right-sologan{
+    font-size: 14px;
+  }
+  .product-right h2{
+    font-size: 30px;
+  }
+  .item-name span{
+    left: 30px;
+    font-size: 10px;
+  }
+  .product-warm{
+    left: 0px;
+  }
+  .product-detail{
+    left: 14px;
+  }
+  .product-warm img{
+    height: 20px;
+  }
+}
+@media(max-height: 320px){
+  .game-list {
+    transform: scale(0.3);
+    top:40%;
   }
 }

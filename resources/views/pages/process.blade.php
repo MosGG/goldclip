@@ -50,6 +50,8 @@
 </section>
 
 <div class="left-block">
+<div id="left-block-top" class="l-page-btn"></div>
+<div id="left-block-bottom" class="l-page-btn"></div>
 <section class="container3">
 	<div id="carousel3">
 		<figure class="current-tab" data-up="IDENTIFICATION" data-low="GOLD CLIP">

@@ -45,31 +45,9 @@
             </div>
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
-              <p class="item-content">百分百澳洲Downs党斯羊毛。
-
-              百分百澳洲制造及拥有-拥有“澳洲制造”认证。
-
-              百分百豪华高支纯棉被面，柔软光滑、透气清爽、极致触感。
-
-              百分百纯羊毛认证，澳洲羊毛协会-国际羊毛局认证。  
-
-              采用澳洲顶级的Pool Dorset 无角陶赛特羊背部的羊毛。
-
-              通过国际OEKO-TEX-Standard 100有害物质检验认证，对人体健康无害。  
-
-              哮喘患者适用；抗菌防螨，有利于减少哮喘和过敏的发生机率。
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+              <p class="item-content">
+                <?=$text['p-1']?>
+              </p>
             </div>
           </div>
       </div>
@@ -77,7 +55,7 @@
     <!-- 2 -->
 		<div class="ppt">
       <div class="product-right">
-  				<div class="product-item special-margin">
+  				<div class="product-item ">
             <div class="item-name">
               <img src="/assets/img/product-2-1.png">
               <span>Australian Made<br>澳洲制造</span>
@@ -85,18 +63,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-2-1']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -107,18 +75,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+              <?=$text['p-2-2']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -129,18 +87,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-2-3']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -151,18 +99,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-2-4']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -173,18 +111,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-2-5']?>
+              </p>
             </div>
           </div>
       </div>
@@ -200,18 +128,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-3-1']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -222,18 +140,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-3-2']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -244,18 +152,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-3-3']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -265,19 +163,7 @@
             </div>
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
-              <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+              <p class="item-content"><?=$text['p-3-4']?></p>
             </div>
           </div>
           <div class="product-item">
@@ -287,13 +173,7 @@
             </div>
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
-              <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              五年质保</p>
+              <p class="item-content"><?=$text['p-3-5']?></p>
             </div>
           </div>
           <div class="product-item">
@@ -303,9 +183,7 @@
             </div>
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
-              <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。</p>
+              <p class="item-content"><?=$text['p-3-6']?></p>
             </div>
           </div>
           <div class="product-item">
@@ -315,9 +193,7 @@
             </div>
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
-              <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。</p>
+              <p class="item-content"><?=$text['p-3-7']?></p>
             </div>
           </div>
       </div>
@@ -332,18 +208,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。
-
-              Gold Clip 采用长达约32微米的羊毛，确保被子里的羊毛填充物不会穿出被面，是婴儿/小孩呼吸健康的最佳选择。
-
-              防螨防过敏，良好的透气性可以让身体在睡眠过程中保持一个恒温从而达到更深度睡眠，特别对于关节疾病患者更能起到一个很好的保护作用。
-
-              手工双层缝边，对被子里的羊毛起到更好的固定作用，不会出现被子填充物与被面脱离的情况。
-
-              羊毛溯源可询，值得信赖。
-
-              五年质保</p>
+                <?=$text['p-4-1']?>
+              </p>
             </div>
           </div>
           <div class="product-item">
@@ -353,8 +219,8 @@
             <div class="item-expand" onclick="expand(this)"></div>
             <div class="item-des">
               <p class="item-content">
-
-              羊毛经碳化处理，无有害物质，可抑制细菌滋生和虫咬虫蛀，具有防腐、防虫、防蛀防潮湿和安全作用。优质的Gold Clip羊毛经过水洗、脱脂、炭化、梳理加工成被子的内胆，天然、舒适、环保。</p>
+                <?=$text['p-4-1']?>
+              </p>
             </div>
           </div>
       </div>
@@ -447,6 +313,8 @@
 </section>
 
 <div class="left-block">
+<div id="left-block-top" class="l-page-btn"></div>
+<div id="left-block-bottom" class="l-page-btn"></div>
 <section class="container3">
 	<div id="carousel3">
 		<figure class="current-tab" data-up="PREMIER QUALITY" data-low="MULTIPLE QUALIFICATION">
@@ -548,69 +416,7 @@
 	var breakpoint = 9;
 </script>
 <script src='/assets/js/goldclip.js'></script>
-<script>
-	$('#carousel').slick({
-	  draggable:false,
-	  vertical: true,
-	  arrows: false,
-	});
-	$('#carousel2').slick({
-	  vertical: true,
-	  draggable:false,
-	  arrows: false,
-	});
-
-  $(window).on('mousewheel DOMMouseScroll', _.debounce(function(e){
-    var direction = (function () {
-          var delta = (e.type === 'DOMMouseScroll' ?
-                       e.originalEvent.detail * -40 :
-                       e.originalEvent.wheelDelta);
-          return delta > 0 ? 0 : 1;
-      }());
-      if(direction === 0) {
-        rotateBox(-1);
-      }
-      if(direction === 1) {
-        rotateBox(1);
-      }
-  }, 500, {immediate:true}));
-
-  $(".page-btn").on('click', _.debounce(function(e){
-    if ($(this).attr('id') == 'next-page') {
-      rotateBox(1);
-    } else {
-      rotateBox(-1);
-    }
-  }, 500, {immediate:true}));
-
-  var degree = 30;
-  function rotateBox(a){
-    var oldDegree = 0;
-    var  obj = $(".game-list li .game-box.game-boxdefault")[0];
-    var rotate = obj.style.transform;
-    if (rotate != ""){
-      oldDegree = rotate.split('rotateY(')[1].split("deg)")[0]
-    } 
-    var newDegree = parseInt(oldDegree) + (a * degree);
-    newDegree = "rotateY(" + newDegree + "deg)";
-    $(".game-list li .game-box.game-boxdefault")[0].style.transform = newDegree;
-  }
-
-  function expand(obj){
-    var target = $(obj).siblings(".item-des");
-    var height = target.children("p").height() + 60;
-    if (target.height() == 0){
-      target.height(height);
-    } else {
-      target.height(0);
-    }
-    var sliderCurrent = $(obj).parent().parent().parent();
-    var parent = $(obj).parent();
-    var scroll = parent[0].offsetTop; //- sliderCurrent[0].offsetTop;
-    console.log(scroll);
-    sliderCurrent.animate({ scrollTop: scroll }, "500");
-  }
-</script>
+<script src='/assets/js/product.js'></script>
 @stop
 
 
