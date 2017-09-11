@@ -7,13 +7,46 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="/assets/css/template.css">
   <link rel="stylesheet" href="/assets/css/newcontact.css">
+  <link rel="stylesheet" href="/assets/css/menu-m.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="background"></div>
-  <div class="title"><img src="/assets/img/title.png" height="36" width="306" style="max-width: 100%"></div>
-  <div id="menu" class="nav">
+  <!-- <div class="title"><img src="/assets/img/title.png" height="36" width="306" style="max-width: 100%"></div> -->
+  <img class="logo" src="/assets/img/goldclip_logo.png">
+  <div id="menu-m">
+    <div class="dot"></div>
+    <div id="top-d" class="dot"></div>
+    <div class="dot"></div>
+    <div id="left-d" class="dot"></div>
+    <div class="dot"></div>
+    <div id="right-d" class="dot"></div>
+    <div class="dot"></div>
+    <div id="bottom-d" class="dot"></div>
+    <div class="dot"></div>
+    <div class="menu-t menu-text">MENU</div>
+    <div class="close-t menu-text">CLOSE</div>
+  </div>
+  <div class="menu-m-content">
+  <div class="menu-m-center">
+    <div class="menu-m-cn-en">
+    <?php
+      if ($text['language'] == 'ch') {
+        echo '<a href="?language=en"><span class="">EN</span></a>|<span class="">中</span>';
+      } else {
+        echo '<span class="">EN</span>|<a href="?language=ch"><span class="">中</span></a>';
+      }
+    ?>
+    </div>
+    <a href="/product?language=<?=$text['language']?>"><h2>Product</h2></a>
+    <a href="/process?language=<?=$text['language']?>"><h2>Process</h2></a>
+    <a href="/about?language=<?=$text['language']?>"><h2>About Us</h2></a>
+    <a href="/contact?language=<?=$text['language']?>"><h2>Contact Us</h2></a>
+  </div>
+  </div>
+  <div id="menu" class="nav2">
   <?php
     if ($text['language'] == 'ch') {
       echo '<a href="?language=en"><div class="en_cn border_right">EN</div></a><div class="brown en_cn border_left ">中</div>';
@@ -94,16 +127,33 @@
 
   <div class="qr"><img src="/assets/img/qr.png"></div>
   <div class="mini_nav">
-    <div href ="#" class="float_left">
+    <div class="float_left">
+      <a href="http://maps.google.com/?q=350 Collins Street, Melbourne, Vic, 3000">
       <img class = 'icon_img' src="/assets/img/Shape.png" height="37" width="39" />
+      </a>
     </div>
-    <div  href ="#" class="middle">
-      <img  class = 'icon_img' src="/assets/img/Phone.png" height="37" width="39" />
+    <div  class="middle">
+      <a href="tel:61451919628">
+        <img  class = 'icon_img' src="/assets/img/Phone.png" height="37" width="39" />
+      </a>
     </div>
-    <div href ="#" class="float_right">
+    <div  class="float_right">
+      <a href="mailto:admin@goldclip.com.au">
       <img   class = 'icon_img' src="/assets/img/Message.png" height="27" width="39" />
+      </a>
     </div>
   </div>
+  <script>
+  $("#menu-m").click(function(){
+    $("#top-d").toggleClass('top-open');
+    $("#bottom-d").toggleClass('bottom-open');
+    $("#left-d").toggleClass('left-open');
+    $("#right-d").toggleClass('right-open');
+    $(".menu-t").toggleClass('menu-t-open');
+    $(".close-t").toggleClass('close-t-open');
+    $(".menu-m-content").toggleClass('menu-m-content-open');
+  });
+  </script>
   <script>
   $(document).ready(function(){
   $('#contact_form').submit(function(event) {
@@ -145,7 +195,7 @@
                                     ajaxResponse.html("<?=$text['success']?>");
                                     ajaxResponse.fadeIn(500);
                                     setTimeout(function(){
-                                        ajaxResponse.fadeOut(500);
+                                        ajaxResponse.fadeOut(100);
                                         $('#contact_form')[0].reset();
                                         $('.form').css('visibility','visible');
                                         ajaxButton.html("<?=$text['submit']?>");

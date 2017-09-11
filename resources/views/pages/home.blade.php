@@ -61,7 +61,7 @@
 	<div class="menu-m-content">
 		<div class="menu-m-center">
 			<div class="menu-m-cn-en">
-			<?php 
+			<?php
 				if ($text['language'] == 'ch') {
 					echo '<a href="?language=en"><span class="">EN</span></a>|<span class="">中</span>';
 				} else {
