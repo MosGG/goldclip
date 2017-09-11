@@ -1,3 +1,7 @@
+  var w_height = $(window).height() * 0.6;
+  $(".ppt").height(w_height);
+
+
 var points = new Array()
 var position = 0;
 var selected = 0;
@@ -74,7 +78,7 @@ $(window).on('mousewheel DOMMouseScroll', _.debounce(function(e){
     if(direction === 1) {
     	next();
     }
-}, 500, {immediate:true}));
+}, 600, {immediate:true}));
 
 $(".container2").on('mousewheel DOMMouseScroll', function(e){
 	e.stopPropagation()
@@ -86,7 +90,15 @@ $(".page-btn").on('click', _.debounce(function(e){
 	} else {
 		prev();
 	}
-}, 500, {immediate:true}));
+}, 600, {immediate:true}));
+
+$(".l-page-btn").on('click', _.debounce(function(e){
+	if ($(this).attr('id') == 'left-block-bottom') {
+		next();
+	} else {
+		prev();
+	}
+}, 600, {immediate:true}));
 
 function next(){
 	rollup();

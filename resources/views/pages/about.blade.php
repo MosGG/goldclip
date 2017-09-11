@@ -136,6 +136,8 @@
 </section>
 
 <div class="left-block">
+<div id="left-block-top" class="l-page-btn"></div>
+<div id="left-block-bottom" class="l-page-btn"></div>
 <section class="container3">
 	<div id="carousel3">
 		<figure class="current-tab" data-up="LOVE WOOL" data-low="GOLD CLIP"><i class="fa fa-circle" aria-hidden="true"></i>01 名字的由来</figure>

@@ -104,7 +104,7 @@
 					</div>
 				</div>
 				<div class="bottomvideo wow fadeIn">
-					<video id="video-2" muted loop playsinline webkit-playsinline src="/assets/video/video2-480.mov"></video>
+					<video id="video-2" muted loop playsinline autoplay webkit-playsinline src="/assets/video/video2-480.mov"></video>
 				</div>
 			</div>
 			<div class="sections">
@@ -119,23 +119,23 @@
 					</div>
 				</div>
 				<div class="bottomvideo wow fadeIn">
-					<video id="video-3" muted loop playsinline webkit-playsinline src="/assets/video/video3-480.mov"></video>
+					<video id="video-3" muted loop playsinline autoplay webkit-playsinline src="/assets/video/video3-480.mov"></video>
 				</div>
 			</div>
 			<div class="news">
 				<img class="news-image" src="/assets/img/news-1.png">
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">从此爱上床</h2>
-					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip一款土生土长于澳大利亚维多利亚州的顶级羊毛被，他选择澳大利亚最好的羊毛和材料，澳洲制造认证，国际羊毛局纯羊毛认证，全球无害物质认证，确保每件产品都按照最高的标准进行打造。</p>
-					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow pulse" data-wow-delay="0.5s">更多信息</button></a>
+					<p class="wow fadeIn" data-wow-delay="0.6s">Gold Clip一款土生土长于澳大利亚维多利亚州的顶级羊毛被，他选择澳大利亚最好的羊毛和材料，澳洲制造认证，国际羊毛局纯羊毛认证，全球无害物质认证，确保每件产品都按照最高的标准进行打造。</p>
+					<a href="/product?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s">更多信息</button></a>
 				</div>
 			</div>
 			<div class="news">
 				<img class="news-image" src="/assets/img/news-2.png">
 				<div class="news-desc">
 					<h2 class="wow fadeIn" data-wow-delay="0.5s">温暖“被”至丨御寒大作战</h2>
-					<p class="wow fadeIn" data-wow-delay="0.5s">Gold Clip顶级羊毛被现已上市，它将成为你生活起居，过节送礼的首选佳品，你还在等待什么，现在就联系我们吧。</p>
-					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow pulse" data-wow-delay="0.5s">联系我们</button></a>
+					<p class="wow fadeIn" data-wow-delay="0.6s">Gold Clip顶级羊毛被现已上市，它将成为你生活起居，过节送礼的首选佳品，你还在等待什么，现在就联系我们吧。</p>
+					<a href="/contact?language=<?=$text['language']?>"><button class="home-button wow fadeIn" data-wow-delay="0.7s">联系我们</button></a>
 				</div>
 			</div>
 		</div>
@@ -151,7 +151,7 @@
 			<a href="/privacy">PRIVACY POLICY</a>
 		</div>
 		<div class="home-footer-cheee fg-regular wow fadeIn" data-wow-delay="0.3s">
-			© Gold Clip 2017 - All Rights Reserved<br>Made with ❤ by Gold Clip
+			© Gold Clip 2017 - All Rights Reserved<br>Made with <i class="fa fa-heart"></i> by Gold Clip
 		</div>
 		<div class="home-footer-icons">
 			<a href="https://www.google.com.au/maps/place/Alcaston+House,+2+Collins+St,+Melbourne+VIC+3004/" target="_blank"><img class="wow fadeIn" data-wow-delay="0.5s" src="assets/img/address.png"></a>

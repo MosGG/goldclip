@@ -104,9 +104,9 @@
 		</div>
 	</div>
 
-	<div id="prev-page" class="page-btn">Prev</div>
-	<div id="next-page" class="page-btn">Next</div>
-	
+	<div id="prev-page" class="page-btn"><img src="/assets/img/prev-page.png"></div>
+	<div id="next-page" class="page-btn"><img src="/assets/img/next-page.png"></div>
+
 	<div class="body-content">
 		@yield('body')
 	</div>

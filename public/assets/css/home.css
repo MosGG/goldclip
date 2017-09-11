@@ -62,7 +62,6 @@ body{
 	position: fixed;
 	color:#fff;
 	width: 100%;
-	overflow-x: scroll;
 	font-size: 230px;
 }
 .parallax div{
@@ -388,7 +387,7 @@ p{
 		font-size: 30px;
 	}
 	.news-desc h2{
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.discover-goldclip{
 		left: 40px;
@@ -424,6 +423,7 @@ p{
 	}
 	.news-desc{
 		margin-left: 0;
+		height: 260px;
 	}
 	.home-button {
     	width: calc(100% - 40px);
