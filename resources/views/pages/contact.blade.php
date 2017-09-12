@@ -122,13 +122,6 @@
         <p class="wspecial_a"><?=$text['wm']?></p>
       </div>
 
-      <div class="checkboxes">
-        <input type="checkbox" id="c1" name="cc" />
-        <label for="c1"><span></span></label><?=$text['check1']?>
-        <br>
-        <input type="checkbox" id="c2" name="cc2" />
-        <label for="c2"><span></span></label><?=$text['agree']?> <c class="privacy" href="#"><?=$text['check2']?></c>.*<d class='wspecial_c'>  <?=$text['wc2']?></d>
-      </div>
 
         <button id ="subbutton" type="submit" class="buttonsub" name="subject" onclick="JavaScript:return Validator();"><c class="ctext"><?=$text['submit']?></c> <img id = "pic" src="assets/img/loading2.gif" /></button>
     </form>
