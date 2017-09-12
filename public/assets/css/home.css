@@ -3,6 +3,10 @@
     src: url('/assets/font/FoundersGrotesk-Regular.otf');
 }
 @font-face {
+    font-family: 'fg-bold';
+    src: url('/assets/font/FoundersGrotesk-Bold.otf');
+}
+@font-face {
     font-family: 'l-bold';
     src: url('/assets/font/Lyon Bold.ttf');
 }
@@ -68,6 +72,7 @@ body{
 	color:#fff;
 	width: 2000px;
 	font-size: 230px;
+	font-family: 'fg-bold';
 }
 .parallax div{
 	width: 2000px;
@@ -152,6 +157,8 @@ p{
 	border-color: #A7A296;
 }
 .home-footer{
+    position: relative;
+    z-index: 80;
 	padding:60px 0 80px 0;
 	text-align: center;
 	background-color: #fff;
@@ -222,7 +229,7 @@ p{
 
 .blank {
   width: 80px;
-  height: 300px;
+  height: 400px;
   float: left;
   background-color: white;
   text-align: center;
@@ -238,7 +245,7 @@ p{
 }
 
 .navbar {
-  width: 300px;
+  width: 400px;
   height: 80px;
   position: absolute;
   top: 50%;
@@ -254,7 +261,7 @@ p{
   position: relative;
   margin: 0 15px;
   cursor: pointer;
-  width:calc(33% - 30px);
+  width:calc(25% - 30px);
   text-align: center;
 }
 
@@ -327,6 +334,9 @@ p{
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
+#arrowdown{
+	cursor: pointer;
+}
 @media(max-width: 1200px){
 	.xl-text{
 		font-size: 40px;
@@ -389,6 +399,9 @@ p{
 	}
 }
 @media(max-width: 414px){
+	#horizontal-2 {
+	    bottom: -45px;
+	}
 	.xl-text{
 		font-size: 30px;
 	}

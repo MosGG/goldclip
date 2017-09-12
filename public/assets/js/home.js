@@ -5,7 +5,7 @@ function scrollHorizontally(e) {
   var scrollT = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
   var delta = scrollT - document.body.clientHeight;
   var obj1 = document.getElementById('horizontal-1');
-  obj1.style.left = document.body.clientWidth - (delta * scrollSpeed)  - 50 + 'px';
+  obj1.style.left = document.body.clientWidth - (delta * scrollSpeed) -50 + 'px';
   var obj2 = document.getElementById('horizontal-2');
   obj2.style.left = - document.body.clientWidth + (delta * scrollSpeed) + 'px';
   var menu = document.getElementById('menu');
@@ -33,6 +33,11 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
   scrollHorizontally(e);
 });
 
+$("#arrowdown").click(function(){
+  $("html, body").animate({ scrollTop: document.body.clientHeight }, "slow");
+  $('#horizontal-2').animate({ left: - document.body.clientWidth + "px" }, "slow");
+  $('#menu').animate({ right: "0px" }, "slow");
+});
 
 function isInScreen(ele){
   if (ele.getBoundingClientRect().top < window.innerHeight &&

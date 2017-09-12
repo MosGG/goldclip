@@ -4,11 +4,15 @@
 	  draggable:false,
 	  vertical: true,
 	  arrows: false,
+    touchMove: false,
+    swipe:false,
 	});
 	$('#carousel2').slick({
 	  vertical: true,
 	  draggable:false,
 	  arrows: false,
+    touchMove: false,
+    swipe:false,
 	});
 
   $(window).on('mousewheel DOMMouseScroll', _.debounce(function(e){
@@ -60,12 +64,14 @@
     var height = target.children("p").height() + 60;
     if (target.height() == 0){
       target.height(height);
+      $(obj).css("background","url('/assets/img/minimise.png')");
     } else {
+      $(obj).css("background","url('/assets/img/expand.png')")
       target.height(0);
     }
+    $(obj).css("background-size","contain");
     var sliderCurrent = $(obj).parent().parent().parent();
     var parent = $(obj).parent();
     var scroll = parent[0].offsetTop; //- sliderCurrent[0].offsetTop;
-    console.log(scroll);
     sliderCurrent.animate({ scrollTop: scroll }, "500");
   }

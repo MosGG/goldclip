@@ -43,16 +43,6 @@
   display:inline-block;
   top: 28px;
 }
-@keyframes upmove{
-  0%   {left:120%;}
-  50%  {left:-120%;}
-  100% {left:120%;}
-}
-@keyframes downmove{
-  0%   {right:100%;}
-  50%  {right:-120%;}
-  100% {right:100%;}
-}
 
 .t5-title{
   text-align: right;
@@ -92,15 +82,9 @@
   /*height:700px!important;*/
   position: relative;
 }
-.product-right{/*
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
-  /*margin:0 auto;*/
+.product-right{
   margin-left: 50px;
   margin-right: 50px;
-  /*max-width: 360px;*/
   text-align: center;
   overflow: hidden;
 }
@@ -167,10 +151,13 @@
   padding: 40px 0;
 }
 .special-margin{
-  margin-top:100px!important;
+  margin-top:120px!important;
 }
 .special-margin-2{
   margin-top:200px!important;;
+}
+.special-margin-3{
+  margin-top:100px!important;;
 }
 .item-name span{
   position: absolute;
@@ -219,12 +206,6 @@
   -moz-transition: -moz-transform .5s;
   transition: transform .5s;
 }
-
-/*.game-list li .game-box.game-boxdefault:hover {
-  -webkit-transform: rotate3d(0,1,0,120deg);
-  -moz-transform: rotate3d(0,1,0,120deg);
-  transform: rotate3d(0,1,0,120deg);
-}*/
 
 .game-list li .game-box > div,
 .game-list li .game-front > div {
@@ -338,88 +319,6 @@
 .box-2 .game-front:after {
     background-color: #1C62D6;
 }
-
-/*.box-2 .game-cover {
-  background-image: url(../images/front2.png);  
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  overflow:hidden;
-
-}
-
-.game-list li .box-2 .game-side {
-  background-image: url(../images/side2.png); 
-}*/
-
-/*.specular{
-  position: absolute;
-  top: -50px;
-  left: -17px;
-  z-index: 10000;
-  width:796px;
-  height: 714px;
-  overflow:hidden;
-
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
-  transform: rotate(-15deg);
-
-
-background: -moz-linear-gradient(270deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
-background: -webkit-linear-gradient(200deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
-background: linear-gradient(270deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
-background-position: 00px 0px;
-background-size: 500px 500px;
--webkit-background-size:500px 500px;
--moz-background-size:500px 500px;
-
--moz-mask: -moz-linear-gradient(top, #fff, transparent 50%); 
--webkit-mask: -webkit-linear-gradient(top, #fff, transparent 50%);
-mask: linear-gradient(top, #fff, transparent 50%);
-
--webkit-transition: left 0.3s linear;
--moz-transition: left 0.3s linear;
-transition: left 0.3s linear;
-}
-*/
-/*.game-box:hover .specular {
-   left: -120px;
-}*/
-
-/*.specular-left {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  z-index: 10000;
-  width:41px;
-  height: 320px;
-
-  overflow:hidden;
-
-background: -moz-linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
-background: -webkit-linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
-background: linear-gradient( rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0.4) 50.1%) no-repeat;
-background-position: 00px 0px;
-background-size: 41px 500px;
--webkit-background-size:41px 500px;
--moz-background-size:41px 500px;
-
--moz-mask: -moz-linear-gradient(left, #fff, transparent 50%); 
--webkit-mask: -webkit-linear-gradient(left, #fff, transparent 50%);
-mask: linear-gradient(left, #fff, transparent 50%);
-
-  -webkit-transition: left 0.25s linear;
-  -moz-transition: left 0.25s linear;
-  transition: left 0.25s linear;
-
-}*/
-/*
-.game-box:hover .specular-left {
-  left: 0px;
-}*/
-
 
 .game-list li .game-cover:after,
 .game-list li .game-back:after {
@@ -535,18 +434,11 @@ mask: linear-gradient(left, #fff, transparent 50%);
   .container{
     top: 12%;
   }
-/*  .container2{
-    top:10%;
-    height: 80%;
-  }*/
   .special-padding{
     padding: 10px 0;
   }
   .product-item{
     margin: 10px 0;
-  }
-  .ppt{
-    /*height: 550px!important;*/
   }
   .game-list{
     left: 22%;
@@ -618,6 +510,9 @@ mask: linear-gradient(left, #fff, transparent 50%);
   }
 }
 @media(max-height: 750px){
+  .special-margin-3{
+    margin-top:0px!important;;
+  }
   .circle{
     left: -50px;
   }
@@ -726,6 +621,9 @@ mask: linear-gradient(left, #fff, transparent 50%);
   }
 }
 @media(max-width: 500px){
+  .special-margin-3{
+    margin-top:0px!important;;
+  }
   .game-list{
     transform: scale(0.2);
     top: 11%;

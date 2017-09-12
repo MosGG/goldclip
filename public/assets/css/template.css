@@ -11,10 +11,10 @@
     font-family: 'l-bold';
     src: url('/assets/font/Lyon Bold.ttf');
 }
-/*@font-face {
-    font-family: 'fg-regular';
-    src: url('/assets/font/FoundersGrotesk-Regular.otf');
-}*/
+@font-face {
+    font-family: 'fg-bold';
+    src: url('/assets/font/FoundersGrotesk-Bold.otf');
+}
 a, a:visited{
   text-decoration: none;
   color: inherit;
@@ -54,7 +54,7 @@ html,body {
   transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
 }
-
+.footer-m,
 .footer {
   position: absolute;
   width: calc(100% - 150px);
@@ -62,7 +62,9 @@ html,body {
   bottom: 50px;
   left: 70px;
 }
-
+.footer-m{
+  display: none;
+}
 .left_footer {
   position: absolute;
   float: left;
@@ -117,7 +119,7 @@ html,body {
 
 .blank {
   width: 80px;
-  height: 300px;
+  height: 400px;
   float: left;
   background-color: white;
   text-align: center;
@@ -133,7 +135,7 @@ html,body {
 }
 
 .navbar {
-  width: 300px;
+  width: 400px;
   height: 80px;
   position: absolute;
   top: 50%;
@@ -149,7 +151,7 @@ html,body {
   position: relative;
   margin: 0 15px;
   cursor: pointer;
-  width:calc(33% - 30px);
+  width:calc(25% - 30px);
   text-align: center;
 }
 
@@ -255,30 +257,31 @@ html,body {
   font-size: 230px;
   font-weight: bold;
   color: #fff;
-  animation: upmove 60s linear infinite;
+  animation: upmove 30s linear infinite;
   width: 2500px;
   transition: opacity 1s linear;
+  font-family: 'fg-bold';
 }
 .lowertitle{
+  text-align: right;
   position: absolute;
   right: 100%;
   bottom: -85px;
   font-size: 230px;
   font-weight: bold;
   color: #fff;
-  animation: downmove 60s linear infinite;
+  animation: downmove 30s linear infinite;
   width: 3000px;
   transition: opacity 1s linear;
+  font-family: 'fg-bold';
 }
 @keyframes upmove{
-  0%   {left:120%;}
-  50%  {left: -2000px;}
-  100% {left:120%;}
+  0%   {left:100%;}
+  100%  {left:-3000px;}
 }
 @keyframes downmove{
   0%   {right:100%;}
-  50%  {right:-2000px;}
-  100% {right:100%;}
+  100%  {right:-3000px;}
 }
 .qrcode{
   position: fixed;
@@ -395,15 +398,6 @@ html,body {
   .nav_font{
     font-size: 12px;
   }
-/*  .page-btn{
-    left: 20px;
-  }
-  #prev-page{
-    top:40%;
-  }
-  #next-page{
-    bottom: 40%;
-  }*/
 }
 @media(max-height: 750px){
   .circle{
@@ -437,30 +431,6 @@ html,body {
     left: 40px;
     width: calc(100% - 80px);
   }
-  /*.nav{
-    width: 40px;
-  }
-  .navbar{
-    height: 40px;
-    width: 240px;
-  }
-  .en_cn{
-    width: 19px;
-    height: 30px;
-    font-size: 10px;
-    line-height: 30px;
-  }
-  .contact_us{
-    width: 40px;
-    height: 100px;
-  }
-  .nav_font{
-    margin: 0 5px;
-    width: calc(33% - 10px);
-  }*/
- /* .blank{
-    height: 240px;
-  }*/
   .icon img{
     width: 24px;
     object-fit: contain;
@@ -506,13 +476,17 @@ html,body {
     font-size: 10px;
   }
   .footer{
+    display: none;
+  }
+  .footer-m{
+    display: block;
     text-align: center;
-    bottom: -22px;
+    bottom: 0px;
   }
   .icon{
     margin-left: 10px;
     margin-right: 10px;
-    top:-57px;
+    top:-70px;
     float: unset;
     transform: translate(0,50%);
     -ms-transform: translate(0,50%);

@@ -376,7 +376,7 @@ textarea:-ms-input-placeholder {
   max-width: 100%;
 }
 
-@media screen and (max-device-width: 990px) and (min-device-width: 770px) and (max-device-height:990px) and (min-device-height:600px) {
+@media screen and (max-width: 990px), (max-height:  625px){
   body {
     font-size: 14px;
   }
@@ -402,7 +402,12 @@ textarea:-ms-input-placeholder {
   }
 }
 
-@media screen and (max-device-width: 768px), (max-device-height:599px) {
+@media screen and (max-width: 768px), (max-height:  625px) {
+  .logo{
+    top: 40px;
+    left: 40px;
+    width: 180px;
+  }
   body {
     font-size: 14px;
     overflow: scroll;
@@ -530,6 +535,7 @@ textarea:-ms-input-placeholder {
     left: 50%;
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
+    float: unset;
   }
   .required {
     width: 92%;

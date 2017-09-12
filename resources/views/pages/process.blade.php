@@ -1,6 +1,6 @@
 @extends('layouts.pageLayout')
 
-@section('title')<title>About Us - GoldClip</title>@stop
+@section('title')<title>Process - GoldClip</title>@stop
 
 @section('css-reference')
 	<!-- <link href="/assets/css/custom-tony.css" rel="stylesheet"> -->
@@ -139,6 +139,7 @@
 @section('js-function')
 <script>
 	var breakpoint = 9;
+	var height_delta = 0.5;
 </script>
 <script src='/assets/js/goldclip.js'></script>
 <script>
@@ -146,11 +147,15 @@
 	  draggable:false,
 	  vertical: true,
 	  arrows: false,
+     	touchMove: false,
+    	swipe:false,
 	});
 	$('#carousel2').slick({
-	  vertical: true,
-	  draggable:false,
-	  arrows: false,
+	  	vertical: true,
+	  	draggable:false,
+	  	arrows: false,
+	    touchMove: false,
+    	swipe:false,
 	});
 </script>
 @stop

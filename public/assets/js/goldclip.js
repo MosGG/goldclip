@@ -1,4 +1,4 @@
-  var w_height = $(window).height() * 0.6;
+  var w_height = $(window).height() * height_delta;
   $(".ppt").height(w_height);
 
 

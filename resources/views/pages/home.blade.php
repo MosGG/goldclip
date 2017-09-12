@@ -7,11 +7,11 @@
 	<meta name="author" content="">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>Gold Clip - Home</title>
+	<title>Home - Gold Clip</title>
 
 	<!-- Favicons -->
-	<!-- <link rel="shortcut icon" href="assets/img/Cheee_heart.png"> -->
-	<!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/assets/img/favicon3.ico">
+<!-- 	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"> -->
 
@@ -35,6 +35,7 @@
 	?>
 	    <div class="blank">
 	      	<div class="navbar">
+	      		<div class="nav_font"><a href="/?language=<?=$text['language']?>" class="hvr-underline-from-left selected"><?=$text['home']?></a></div>
 		        <div class="nav_font"><a href="/product?language=<?=$text['language']?>" class="hvr-underline-from-left"><?=$text['product']?></a></div>
 		        <div class="nav_font"><a href="/process?language=<?=$text['language']?>" class="hvr-underline-from-left"><?=$text['process']?></a></div>
 		        <div class="nav_font"><a href="/about?language=<?=$text['language']?>" class="hvr-underline-from-left"><?=$text['about']?></a></div>
@@ -81,11 +82,11 @@
 		<img class="logo" src="/assets/img/goldclip_logo.png">
 		<video id="video-1" muted loop playsinline autoplay webkit-playsinline src="/assets/video/video1-480.mov"></video>
 		<div class="discover-goldclip">
-			<h2 class="lyon-bold xl-text white wow fadeInUp">SCROLL,</h2>
-			<h2 class="lyon-bold xl-text white wow fadeInUp" data-wow-delay="0.5s">PARTICIPATE &</h2>
-			<h2 class="lyon-bold xl-text white wow fadeInUp" data-wow-delay="1s">DISCOVER GOLD CLIP</h2>
+			<h2 class="lyon-bold xl-text white wow fadeInUp"><?=$text['home-screen-1-1']?></h2>
+			<h2 class="lyon-bold xl-text white wow fadeInUp" data-wow-delay="0.5s"><?=$text['home-screen-1-2']?></h2>
+			<h2 class="lyon-bold xl-text white wow fadeInUp" data-wow-delay="1s"><?=$text['home-screen-1-3']?></h2>
 			</h2>
-			<img class="wow fadeInUp" data-wow-delay="1.5s" src="/assets/img/ArrowDown.png">
+			<img id="arrowdown" class="wow fadeInUp" data-wow-delay="1.5s" src="/assets/img/ArrowDown.png">
 		</div>
 		<div id="horizontal-1" class="fg-regular parallax">PURE WOOL</div>
 		<div id="horizontal-2" class="fg-regular parallax"><div>PREMIER QUALITY</div></div>
@@ -147,8 +148,9 @@
 		<div class="home-footer-links fg-regular wow fadeIn">
 			<a href="/about?language=<?=$text['language']?>"><?=$text['about']?></a> |
 			<a href="/product?language=<?=$text['language']?>"><?=$text['product']?></a> |
-			<a href="/process?language=<?=$text['language']?>"><?=$text['process']?></a> |
-			<a href="/privacy"><?=$text['privacy']?></a>
+			<a href="/process?language=<?=$text['language']?>"><?=$text['process']?></a> 
+			<!-- |
+			<a href="/privacy"><?=$text['privacy']?></a> -->
 		</div>
 		<div class="home-footer-cheee fg-regular wow fadeIn" data-wow-delay="0.3s">
 			© Gold Clip 2017 - All Rights Reserved<br>Made with <i class="fa fa-heart"></i> by Gold Clip
@@ -167,11 +169,8 @@
 <script src="/assets/js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/assets/js/home.js"></script>
 <script type="text/javascript" src="/assets/js/wow.min.js"></script>
-<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>
 <script type="text/javascript">
 	new WOW().init();
-
-	
 
 	$("#menu-m").click(function(){
 		$("#top-d").toggleClass('top-open');
