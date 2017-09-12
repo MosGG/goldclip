@@ -207,7 +207,7 @@
                                 ajaxResponse.fadeIn(500);
 
                             } else {
-                              ajaxResponse.html(result.message);
+                              ajaxResponse.html("<?=$text['error']?>");
                               ajaxButton.html("<?=$text['submit']?>");
                               ajaxResponse.fadeIn(500);
 
