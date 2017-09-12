@@ -16,9 +16,6 @@ class EmailController extends Controller
       $phone = $request->input('phone');
       $message = $request->input('message');
       $future = $request->input('future');
-
-
-
       $messageBody = "Name: " . $fname ."<br>";
       $messageBody .= "Email: " . $email_from ."<br>";
       $messageBody .= "Phone: " . $phone ."<br>";
