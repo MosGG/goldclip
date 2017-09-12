@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/assets/css/newcontact.css">
   <link rel="stylesheet" href="/assets/css/menu-m.css">
   <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -16,6 +17,7 @@
   <div class="background"></div>
   <!-- <div class="title"><img src="/assets/img/title.png" height="36" width="306" style="max-width: 100%"></div> -->
   <a href="/?language=<?=$text['language']?>"><img class="logo" src="/assets/img/goldclip_logo.png"></a>
+
   <div id="menu-m">
     <div class="dot"></div>
     <div id="top-d" class="dot"></div>
@@ -121,14 +123,14 @@
   <div class="info">
     <div class="head"><b>Gold Clip Australia Pty. Ltd.</b></div>
     <div class="content special"><b>ABN:</b> 69620431272 </div>
-    <div class="content"><b><?=$text['email']?>:</b> admin@goldclip.com.au</div>
-    <div class="content"><b><?=$text['address']?>:</b> Level 2, 350 Collins Street, Melbourne, Vic, 3000</div>
+    <div class="content"><b><?=$text['email']?>: </b><a href="mailto:admin@goldclip.com.au"><c class="underline">admin@goldclip.com.au</c></a></div>
+    <div class="content"><b><?=$text['address']?>: </b><a href="http://maps.google.com/?q=350 Collins Street, Melbourne, Vic, 3000" target="_blank"><c class="underline">Level 2, 350 Collins Street, Melbourne, Vic, 3000</c></a></div>
   </div>
 
   <div class="qr"><img src="/assets/img/qr.png"></div>
   <div class="mini_nav">
     <div class="float_left">
-      <a href="http://maps.google.com/?q=350 Collins Street, Melbourne, Vic, 3000">
+      <a href="http://maps.google.com/?q=350 Collins Street, Melbourne, Vic, 3000" target="_blank">
       <img class = 'icon_img' src="/assets/img/Shape.png" height="37" width="39" />
       </a>
     </div>
@@ -194,13 +196,6 @@
                                     ajaxResponse.hide();
                                     ajaxResponse.html("<?=$text['success']?>");
                                     ajaxResponse.fadeIn(500);
-                                    setTimeout(function(){
-                                        ajaxResponse.fadeOut(100);
-                                        $('#contact_form')[0].reset();
-                                        $('.form').css('visibility','visible');
-                                        ajaxButton.html("<?=$text['submit']?>");
-                                        ajaxButton.fadeIn(500);
-                                    },3000);
 
                                   } else {
                                     responsepic.css('visibility','hidden');

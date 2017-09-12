@@ -16,6 +16,7 @@ body {
   text-align: center;
   top: 20%;
   left: 5%;
+  border: 1px solid #D2C7AC;
 }
 
 .form_title {
@@ -30,11 +31,14 @@ body {
 }
 
 .required {
-  position: absolute;
-  display: inline-block;
+  position: relative;
   font-size: 0.875em;
-  top: 13%;
-  right: 6%;
+  top: 15%;
+  width: 83%;
+  transform: translate(-50%, 0);
+  left: 50%;
+  color: #A7A296;
+  text-align: right;
 }
 
 .nav2 {
@@ -50,7 +54,7 @@ body {
 
 #contact_form {
   width: 90%;
-  height: 81%;
+  height: 75%;
   position: absolute;
   left: 50%;
   top: 58%;
@@ -64,7 +68,7 @@ body {
   height: 51px;
   float: left;
   position: relative;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   text-align: left;
 }
 
@@ -78,23 +82,34 @@ body {
 
 .warning {
   position: relative;
-color: #A7A296;
-visibility: hidden;
-top: -11%;
-left: 8%;
-text-align: left;
-font-size: 0.75em;
-float: left;
+  color: #A7A296;
+  visibility: hidden;
+  top: 9%;
+  left: 8%;
+  text-align: left;
+  font-size: 0.75em;
+  float: left;
 }
 
 .wspecial_a {
   position: relative;
   color: #A7A296;
   visibility: hidden;
-  top: -8%;
+  top: 0%;
   left: 4%;
   text-align: left;
   font-size: 0.75em;
+}
+@-moz-document url-prefix() {
+  .wspecial_a {
+    position: relative;
+    color: #A7A296;
+    visibility: hidden;
+    top: 3%;
+    left: 4%;
+    text-align: left;
+    font-size: 0.75em;
+  }
 }
 
 .wspecial_c {
@@ -110,11 +125,11 @@ float: left;
 
 .sr-only {
   position: relative;
-font-size: 1em;
-color: #A7A296;
-float: left;
-width: 100%;
-left: 8%;
+  font-size: 1em;
+  color: #A7A296;
+  float: left;
+  width: 100%;
+  left: 8%;
 }
 
 .form-control {
@@ -122,8 +137,8 @@ left: 8%;
   height: 49%;
   top: 4%;
   position: relative;
-  border: 2px solid #A7A296;
-  color: #A7A296;
+  border: 1px solid #A7A296;
+  color: black;
   padding-left: 3%;
   background-color: #F7F6F3;
   float: left;
@@ -143,8 +158,8 @@ left: 8%;
   top: 2%;
   padding-left: 2%;
   padding-top: 3%;
-  color: #A7A296;
-  border: 2px solid #A7A296;
+  color: black;
+  border: 1px solid #A7A296;
   background-color: #F7F6F3;
   left: 50%;
   transform: translate(-50%,0);
@@ -156,7 +171,7 @@ left: 8%;
 }
 
 .form_left {
-  left: 3.5%;
+  left: 4%;
 }
 
 .checkboxes {
@@ -164,10 +179,11 @@ left: 8%;
   height: 9%;
   position: relative;
   left: 4%;
-  bottom: -13%;
+  top: 11%;
   text-align: left;
   float: left;
   font-size: 0.875em;
+  color: #A7A296;
 }
 
 .checkboxes input {
@@ -197,6 +213,27 @@ input[type="checkbox"]:checked+label span {
   background-size: 15px 15px;
 }
 
+.hvr-underline-from-left-white::before {
+  right: 0 !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #DCD8CE;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #DCD8CE;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #DCD8CE;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #DCD8CE;
+}
+
 .privacy {
   color: #896C4C;
   font-weight: bold;
@@ -210,7 +247,7 @@ input[type="checkbox"]:checked+label span {
   background-color: black;
   text-align: center;
   font-size: 1.125em;
-  top: 21%;
+  top: 18%;
   color: white;
   border: 1px solid black;
   cursor: pointer;
@@ -236,6 +273,7 @@ input[type="checkbox"]:checked+label span {
   position: absolute;
   right: 26%;
   top: 67.7%;
+  z-index: 10
 }
 
 .head {
@@ -246,11 +284,20 @@ input[type="checkbox"]:checked+label span {
 .content {
   font-size: 1em;
   color: #AFA37D;
+  margin-bottom: 2%;
 }
 
 .special {
   margin-top: 2%;
   margin-bottom: 6%;
+}
+
+.underline {
+
+}
+
+.underline:hover {
+  text-decoration: underline;
 }
 
 .qr {
@@ -264,8 +311,8 @@ input[type="checkbox"]:checked+label span {
   display: inline-block;
   width: 213px;
   height: 37px;
-  right: -45%;
-  top: 86%;
+  right: -46%;
+  top: 85.4%;
   text-align: center;
 }
 
@@ -333,6 +380,9 @@ input[type="checkbox"]:checked+label span {
   body {
     font-size: 14px;
   }
+  .form {
+    height: 73%;
+  }
   .mini_nav {
     position: absolute;
     display: inline-block;
@@ -383,6 +433,7 @@ input[type="checkbox"]:checked+label span {
     text-align: center;
     top: 88px;
     left: 50%;
+    border: 1px #D2C7AC solid;
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
   }
@@ -399,18 +450,24 @@ input[type="checkbox"]:checked+label span {
     text-align: center;
   }
   .buttonsub {
-    top: 70px;
+    top: 58px;
     height: 36px;
   }
   .wspecial_a {
-    top: -8px;
+    top: -3px;
+  }
+
+  @-moz-document url-prefix() {
+    .wspecial_a {
+    top:5px;
+    }
   }
   .special {
     margin-top: 10px;
     margin-bottom: 20px;
   }
   .checkboxes {
-    top: 50px;
+    top: 38px;
     bottom: 0;
   }
   #contact_form {
