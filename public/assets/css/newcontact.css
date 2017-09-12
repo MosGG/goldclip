@@ -531,4 +531,7 @@ textarea:-ms-input-placeholder {
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
   }
+  .required {
+    width: 92%;
+  }
 }
