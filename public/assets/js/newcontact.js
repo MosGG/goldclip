@@ -1,8 +1,11 @@
 function Validator(){
   var flag = 0;
+  $('p').css('visibility','hidden');
+  $('d').css('visibility','hidden');
   var a =document.forms["contact_form"];
-  var bt = document.forms["contact_form"]["subject"]
-  for (let s of a) {
+  var bt = document.forms["contact_form"]["subject"];
+  for (var i = 0;i<a.length;i++) {
+    var s = a[i];
     if( s.name == "_token" ||s.name == "c1"||s.name == "cphone" ||s.name == "subject" ){
       continue;
     }else {
@@ -32,10 +35,10 @@ function Validator(){
     }
 }
 
-setTimeout(function(){
-    $('p').css('visibility','hidden');
-    $('d').css('visibility','hidden');
-},4000);
+// setTimeout(function(){
+//     $('p').css('visibility','hidden');
+//     $('d').css('visibility','hidden');
+// },4000);
 
 // console.log(flag)
 if(flag == 1){
