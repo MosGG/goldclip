@@ -25,14 +25,14 @@ body {
   display: inline-block;
   font-size: 1.5em;
   left: 50%;
-  top: 6%;
+  top: 14%;
   transform: translate(-50%, 0);
 }
 
 .required {
   position: relative;
   font-size: 0.875em;
-  top: 15%;
+  top: 21%;
   width: 83%;
   transform: translate(-50%, 0);
   left: 50%;
@@ -55,7 +55,7 @@ body {
   height: 75%;
   position: absolute;
   left: 50%;
-  top: 58%;
+  top: 64%;
   transform: translate(-50%, -50%);
   display: inline-block;
 }
@@ -141,6 +141,7 @@ body {
   float: left;
   left: 50%;
   transform: translate(-50%, 0);
+  box-shadow: 1px 1px 1px 1px rgba(255,255,255,0);
 }
 
 .form-control:focus {
@@ -159,6 +160,7 @@ body {
   background-color: #F7F6F3;
   left: 50%;
   transform: translate(-50%, 0);
+  box-shadow: 1px 1px 1px 1px rgba(255,255,255,0);
 }
 
 .form_text:focus {
@@ -242,7 +244,7 @@ textarea:-ms-input-placeholder {
   background-color: black;
   text-align: center;
   font-size: 1.125em;
-  top: 18%;
+  top: 15%;
   color: white;
   border: 1px solid black;
   cursor: pointer;
@@ -418,6 +420,10 @@ textarea:-ms-input-placeholder {
   /*.nav {
     display: none
   }*/
+  .form_title {
+    top:45px;
+  }
+
   .form {
     width: 92%;
     position: relative;
@@ -520,5 +526,6 @@ textarea:-ms-input-placeholder {
   }
   .required {
     width: 92%;
+    top: 70px;
   }
 }
