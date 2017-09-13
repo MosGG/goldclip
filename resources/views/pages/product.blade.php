@@ -30,12 +30,11 @@
 			<div class="product-right">
           <h2>“</h2>
           <label class="detail-right-sologan">
-              我们热爱羊毛，热爱生活，<br>
-              与羊毛生活与共，呼吸与共，<br>日夜相伴。
+              <?=$text['lovewool']?>
           </label>
           <br><br>
           <span>Gold Clip</span>
-          <p class="special-padding">Gold Clip原材料均采集于澳洲本地由Poll Dorset协会认证的牧羊场，这些牧羊场的每一只羊均受澳洲有关动物身份识别及管理部门Shearwell Australia的监管；羊毛经澳洲羊毛协会Woolmark认证；并在维多利亚羊毛处理机构Victoria Wool Processor澳洲仅有的三家羊毛处理和供应商中最大的一家，做羊毛净化处理，羊毛来源经过VWP和羊毛牧场双重认证，品质保证。</p>
+          <p class="special-padding"><?=$text['product-1-des']?></p>
           <div class="product-item">
             <div class="item-name">
               <?=$text['our_quality']?>
@@ -231,7 +230,7 @@
                 <img src="/assets/img/high-warm.png">
               </div>
               <div class="product-detail">
-                <div class="p-title">高暖冬被 550克（GMS）</div>
+                <div class="p-title"><?=$text['highwarm']?></div>
                 <div class="p-price left">
                   <label class="p-p-title"><?=$product[0]['title']?></label><br>
                   <label class="p-p-price"><?=$product[0]['price']?></label><br>
@@ -249,7 +248,7 @@
                 <img src="/assets/img/four-season.png">
               </div>
               <div class="product-detail">
-                <div class="p-title">四季被 400克（GMS）</div>
+                <div class="p-title"><?=$text['everyday']?></div>
                 <div class="p-price left">
                   <label class="p-p-title"><?=$product[2]['title']?></label><br>
                   <label class="p-p-price"><?=$product[2]['price']?></label><br>

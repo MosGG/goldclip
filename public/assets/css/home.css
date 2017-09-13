@@ -10,8 +10,13 @@
     font-family: 'l-bold';
     src: url('/assets/font/Lyon Bold.ttf');
 }
+
+@font-face {
+    font-family: 'siyuan';
+    src: url('/assets/font/NotoSansHans-Regular.otf');
+}
 body{
-	font-family: 'fg-regular';
+	font-family: 'fg-regular', 'siyuan';
 }
 .brown{
 	color: #896C4C!important;

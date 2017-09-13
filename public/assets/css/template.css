@@ -15,6 +15,10 @@
     font-family: 'fg-bold';
     src: url('/assets/font/FoundersGrotesk-Bold.otf');
 }
+@font-face {
+    font-family: 'siyuan';
+    src: url('/assets/font/NotoSansHans-Regular.otf');
+}
 a, a:visited{
   text-decoration: none;
   color: inherit;
@@ -24,7 +28,7 @@ html,body {
   height: 100%;
   overflow: hidden;
   background-color: #fff;
-  font-family: 'fg-regular';
+  font-family: 'fg-regular', 'siyuan';
   margin:0;
 }
 .brown{

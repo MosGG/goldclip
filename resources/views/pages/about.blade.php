@@ -53,7 +53,9 @@
 		<div class="ppt">
 			<div class="detail-left">
 				<p><?=$text['about-d-4']?></p>
+				<?php if ($text['language'] != 'en'){ ?>
 				<div style="text-align: center;padding-top: 10px;"><img src="/assets/img/about-4-2.png"></span></div>
+				<?php }?>
 			</div>
 			<div class="detail-right">
 				<img src="/assets/img/about-4.png">

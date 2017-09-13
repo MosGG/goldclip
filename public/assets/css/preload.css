@@ -1,0 +1,124 @@
+.preload{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+    background: #fff;
+}
+.background{
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    background-color: rgb(247, 246, 243);
+    margin:40px;
+}
+#pre-circle{
+	width: 136px;
+	height: 136px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 136px;
+	background-color:  #8A6D4D;
+}
+#pre-circle svg{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.anime{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-width:1;
+    fill: #8A6D4D;
+    animation: draw-sheep 5s linear forwards;
+}
+.anime2{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-width:1;
+    fill: #F7F6F3;
+    animation: draw-letter 4s 2s linear forwards;
+}
+#goldclip-svg{
+	position: absolute;
+	top: calc(50% + 92px);
+	left: 50%;
+	transform: translate(-50%,0);
+}
+@keyframes draw-sheep {
+    0% {
+        stroke-dashoffset: 500;
+    }
+    70%{
+    	fill:#8A6D4D;
+    }
+    100% {
+    	fill:#fff;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes draw-letter {
+    0% {
+        stroke-dashoffset: 500;
+    }
+    40%{
+    	fill:#F7F6F3;
+    }
+    60%{
+    	fill:#8A6D4D;
+    }
+    100% {
+    	fill:#8A6D4D;
+        stroke-dashoffset: 0;
+    }
+}
+.pre-des{
+	position: absolute;
+	width: 0;
+	top: calc(50% + 160px);
+	left: 50%;
+	transform: translate(-50%,0);
+	color:#8A6D4D;
+	font-size: 14px;
+	letter-spacing: 1px;
+	overflow: hidden; 
+	/*border-right: .15em solid #8A6D4D; */
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: 
+    typing 3.5s 4s steps(30, end) forwards;
+    /*blink-caret .5s step-end infinite;*/
+    line-height: 14px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 265px }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #8A6D4D }
+}
+@media(max-width: 768px) {
+    #pre-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    #pre-circle svg{
+        width: 80px;
+        height: 80px;
+    }
+    #goldclip-svg{
+        width: 200px;
+        top: calc(50% + 52px);
+    }
+    .pre-des{       
+        top: calc(50% + 120px);
+    }
+}
