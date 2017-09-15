@@ -523,9 +523,28 @@ textarea:-ms-input-placeholder {
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
+    padding-bottom: 31px;
   }
   .required {
     width: 92%;
     top: 70px;
   }
+
+  input[type=text] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input[type=email] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .form_text {
+      -webkit-border-radius: 0;
+  }
+
 }
